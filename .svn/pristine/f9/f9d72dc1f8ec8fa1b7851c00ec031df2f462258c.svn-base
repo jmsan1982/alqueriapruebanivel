@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <staticContent>
+            <mimeMap fileExtension=".mp4" mimeType="video/mpeg" />
+        </staticContent>
+        <rewrite>
+            <rules>
+               <rule name="HTTP to HTTPS redirect" stopProcessing="true">
+                 <match url="(.*)" />
+                 <conditions>
+                   <add input="{HTTPS}" pattern="off" ignoreCase="true" />
+                 </conditions>
+                 <action type="Redirect" redirectType="Permanent" url="https://servicios.alqueriadelbasket.com/{R:1}" />
+               </rule>
+            </rules>
+        </rewrite>
+    </system.webServer>
+</configuration>

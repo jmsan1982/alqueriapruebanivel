@@ -1,0 +1,191 @@
+#page-content {
+    margin-top: 18vh;
+    min-height: 30vh;
+}
+
+.seccionorganigrama{
+    background-image: url(../img/jugador70.png);
+    background-repeat: no-repeat !important;
+    background-position: top left !important;
+    background-size:250px auto;
+    overflow-x: hidden;
+    min-height:450px;
+}
+
+#organigrama-jose-puentes,
+#organigrama-chechu-mulero,
+#organigrama-mari-angeles-vidal,
+#organigrama-andreu-casadevall,
+#organigrama-esteban-albert,
+#organigrama-toni-monzo
+{
+    padding-top:1.5rem;
+}
+
+
+
+
+
+.imagen-ampliar{
+    transition: transform .3s;
+    cursor:pointer;
+}
+
+.imagen-ampliar:hover {
+    transform: scale(1.1);
+}
+
+.organigrama-box-v2{
+    background-color: #000;
+    background-size: 100%;
+    height:280px;
+    border-bottom:3px solid #EB7C00;
+    opacity: 1;
+    color:white;
+    font-size: 1.5em;
+    padding:0px 0px 0px 0px;
+    text-align:center;
+    cursor:pointer;
+}
+
+.organigrama-box-v2 h3{
+    font-weight: bold;
+    text-align:center;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    margin-top: 0.5em;
+    color: #EB7C00;
+    font-size:1em;
+    line-height: 1em;
+}
+
+.organigrama-box-v2 h4{
+    text-align:center;
+    color: white;
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-size:0.8em;
+    padding-left:0.25em;
+    padding-right:0.25em;
+}
+
+
+
+/* Parte de abajo con los CV */
+.organigrama-nombre{margin-top:0px;margin-bottom:0rem;}
+.organigrama-puesto{margin-top:0px;font-style:italic;margin-bottom:0px;}
+.organigrama-procedencia{margin-top:0px;margin-top:0px;margin-bottom:0px;}
+.organigrama-cv{font-size:1.3em;list-style: none;padding-left:0px;}
+.organigrama-box-p{font-size:15px;min-height:42px;}
+.organigrama-box-img{max-width:150px;max-height:150px;}
+
+
+@media only screen and (max-width: 1025px){
+    .seccionorganigrama{
+        background-image:none;
+    }
+    
+    .organigrama-box-v2{
+        background-color: #000;
+        background-size: 100%;
+        height:275px;
+        border-bottom:3px solid #EB7C00;
+        opacity: 1;
+        color:white;
+        font-size: 1.5em;
+        padding:15px 0px 0px 0px;
+        text-align:center;
+        margin-bottom:10px;
+    }
+
+    .organigrama-box-v2 h3{
+        font-weight: bold;
+        text-align:center;
+        margin-bottom:0px;
+        padding-bottom:0px;
+        margin-top: 0.5em;
+        color: #EB7C00;
+        font-size:1em;
+        line-height: 1em;
+    }
+
+    .organigrama-box-v2 .img-responsive{
+        width:75%;
+        margin:0 auto;
+    }
+    
+    .imagen-ampliar{
+        width: 100%;
+        transition: transform .3s;
+    }
+    .imagen-ampliar:hover {
+        transform: scale(1.3);
+    }
+
+    .organigrama-box-v2 h4{
+        text-align:center;
+        color: white;
+        margin-top: 0px;
+        margin-bottom:0px;
+        font-size:0.8em;
+        padding-left:0.25em;
+        padding-right:0.25em;
+    }
+    
+    .organigrama-cv{padding-bottom:3em;}
+}
+
+@media only screen and (max-width: 768px){
+    .seccionorganigrama{
+        background-image:none;
+    }
+    
+    .organigrama-box-v2{
+        background-color: #000;
+        background-size: 100%;
+        height:275px;
+        border-bottom:3px solid #EB7C00;
+        opacity: 1;
+        color:white;
+        font-size: 1.5em;
+        padding:15px 0px 0px 0px;
+        text-align:center;
+        margin-bottom:10px;
+    }
+
+    .organigrama-box-v2 h3{
+        font-weight: bold;
+        text-align:center;
+        margin-bottom:0px;
+        padding-bottom:0px;
+        margin-top: 0.5em;
+        color: #EB7C00;
+        font-size:1em;
+        line-height: 1em;
+    }
+
+    .organigrama-box-v2 .img-responsive{
+        width:75%;
+        margin:0 auto;
+    }
+    
+    .imagen-ampliar{
+        width: 100%;
+        transition: transform .3s;
+    }
+    .imagen-ampliar:hover {
+        transform: scale(1.3);
+    }
+    
+    .organigrama-box-v2 h4{
+        text-align:center;
+        color: white;
+        margin-top: 0px;
+        margin-bottom:0px;
+        font-size:0.8em;
+        padding-left:0.25em;
+        padding-right:0.25em;
+    }
+    
+    .organigrama-cv{padding-bottom:2em;}
+}

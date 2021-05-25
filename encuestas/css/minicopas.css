@@ -1,0 +1,22 @@
+.carouselnoticias{
+	height:250px !important;
+}
+.carouselcontenido{
+	padding-left:20px;
+	padding-right: 20px;
+	top: 20px !important;
+}
+.comillado{
+	color:#eb7c00;
+	font-size: 30px;
+}
+.owl-next{
+	display: none;
+}
+.owl-prev{
+	display: none;
+}
+.contenido{
+	font-style: italic;
+	color: black !important;
+}

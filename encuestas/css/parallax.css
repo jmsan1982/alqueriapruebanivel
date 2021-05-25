@@ -1,0 +1,35 @@
+.parallax { 
+    height: 200px; 
+    margin-top: 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+/* Media queries */
+
+/* Tablet vertical+ */
+@media screen and (min-width: 768px) {
+    .parallax { 
+        height: 300px; 
+    }
+}
+
+/* Tablet horizontal+ */
+@media screen and (min-width: 992px) {
+    .parallax { 
+        height: 300px; 
+    }
+}
+
+/* Portátil+ */
+@media screen and (min-width: 1400px) {
+    .parallax { 
+        height: 400px; 
+    }
+}

@@ -1,0 +1,307 @@
+.formulariocampusverano{
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.95)), url(../img/portadatriptico.png);
+    background-repeat: repeat-y;
+    background-position: center top; 
+    background-size: 100% auto;
+    border-radius: 5px;
+}
+.formulariocampusnavidad{
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.9)), url(../img/fondocampusinvierno.png);
+    background-repeat: repeat-y;
+    background-position: center top; 
+    background-size: 100% auto;
+    border-radius: 5px;
+}
+.formulariocampuspascua{
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.9)), url(../img/fondocampuspascua.png);
+    background-repeat: repeat-y;
+    background-position: center top; 
+    background-size: 100% auto;
+    border-radius: 5px;
+}
+.formularioescuelanavidad{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.8)), url(../img/fondoescuelanavidad.png);
+    background-repeat: repeat-y;
+    background-position: center top; 
+    background-size: 100% auto;
+    border-radius: 5px;
+}
+.formularioescuelapascua{
+    /*background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.9)), url(../img/fondoescuelapascua.png);
+    background-repeat: repeat-y;
+    background-position: center top; 
+    background-size: 100% auto;*/
+    border-radius: 5px;
+}
+
+
+.btn > span {
+   margin-top: 0px !important;
+}
+.form-group p{
+    text-align:justify;
+}
+
+
+/* CHECKBOXES */
+.containerchekbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /*margin-bottom: 12px;*/
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerchekbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #aeaea5;
+}
+
+/* On mouse-over, add a grey background color */
+.containerchekbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerchekbox input:checked ~ .checkmark {
+    background-color:#eb7c00;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerchekbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerchekbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.turnos{
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Radio Buttons  */
+.control-group {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.control {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 0%;
+    cursor: pointer;
+}
+
+.talla{
+	width: 100px !important;
+}
+.salto{
+	display: none;
+}
+.salto2{
+	display: none;
+}
+
+@media only screen and (max-width: 1259px) {
+    .control {
+        padding-left: 30px;
+        margin-right: 5%;
+    }
+}
+@media only screen and (max-width: 1142px) {
+    .talla{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1001px) {
+    .salto{
+		display:block;
+	}
+}
+@media only screen and (max-width: 422px) {
+    .salto2{
+		display:block;
+	}
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #aeaea5;
+}
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+.control input:checked ~ .control__indicator {
+  background: #eb7c00;
+}
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #eb7c00;
+}
+.control input:disabled ~ .control__indicator {
+  background: #eb7c00;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+.control--radio .control__indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #eb7c00;
+}
+
+.containerchekbox p{
+	text-align: left;margin:10px 0px;
+}
+
+.page-contacts-block .message-wrap .form-group textarea.form-control {
+    width: 100%;
+    height: 150px;
+}
+
+
+.parrafofloat{
+	  padding-top: 15px;
+    padding-right: 10px;
+    float: left;
+}
+.orange-text{
+	color: #eb7c00 !important;
+}
+.icon-wrap p{
+	font-family: 'Roboto Condensed', sans-serif !important;
+}
+.imageexpo{
+  width: 100%;
+  transition: transform .3s; /* Animation */
+}
+.imageexpo:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.padding0{
+  padding: 0px !important;
+}
+.resultados ::-webkit-scrollbar { 
+    display: none; 
+}
+.resultados ul {
+  position: relative;
+  width: 100%;
+  height: 490px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none;
+
+  -webkit-perspective: 400px;
+     -moz-perspective: 400px;
+      -ms-perspective: 400px;
+       -o-perspective: 400px;
+          perspective: 400px;
+}
+.resultados ul li {
+  position: relative;
+  padding: 16px;
+  background: #eee;
+  color: #252525;
+  font-size: 14px;
+  z-index: 2;
+  height: 50px;
+
+  -webkit-transform: translateZ(0px);
+     -moz-transform: translateZ(0px);
+      -ms-transform: translateZ(0px);
+       -o-transform: translateZ(0px);
+          transform: translateZ(0px);
+}
+.resultados ul li:nth-child(odd) {
+  background: #fff;
+}
+.carouselnoticias{
+	height:250px !important;
+}
+.carouselcontenido{
+	padding-left:20px;
+	padding-right: 20px;
+	top: 20px !important;
+}
+.comillado{
+	color:#eb7c00;
+	font-size: 30px;
+}
+.owl-next{
+	display: none;
+}
+.owl-prev{
+	display: none;
+}
+.contenido{
+	font-style: italic;
+	color: black !important;
+}
+
+#page-content {
+    margin-top: 19vh;
+}

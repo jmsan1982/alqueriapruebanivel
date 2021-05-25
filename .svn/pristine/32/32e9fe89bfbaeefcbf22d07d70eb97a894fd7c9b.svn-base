@@ -1,0 +1,89 @@
+.parallax { 
+    height: 400px; 
+    margin-top: 10px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax p{
+	margin: 50px;
+	color:black;
+	background-color: rgba(247, 247, 247, 0.6);
+	font-family: "RobotoCondensedRegular", sans-serif;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.parallax h4{
+	padding: 50px;
+	color:black;
+	background-color: rgba(247, 247, 247, 0.6);
+	text-transform: uppercase;
+	font-family: "RobotoCondensedRegular", sans-serif;
+	width: 50%;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.parallax h4{
+		padding: 10px;
+		width: 100%;
+	}
+	.parallax p {
+    	margin-top: 75px;
+    	font-size: 1em;
+  	}
+}
+
+
+.post-title{
+	margin-top: -40px;
+}
+
+.blog-post{
+	margin-top: 20px;
+}
+.date-wrap{
+    width: 120px;
+}
+
+.btn {
+    height: 40px;
+}
+.category-list li a{
+	color:orange;
+	font-size: 20px;
+}
+
+.tags-list li a {
+	color:orange;
+	font-size: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+.post-date span {
+    margin-top: 17px !important;
+}
+.reservas{
+	border:#f38b16 1px solid;
+	border-radius:5px;
+	padding-left:10px;
+}
+.calendar-title{
+	font-size: 1.2em !important;
+}
+
+.alert-warning{
+
+	margin-top: 15%;
+	color:#856404;
+	background-color:#fff3cd;
+	border-color:#ffeeba
+}
+
+#page-content {
+    min-height: 950px;
+}

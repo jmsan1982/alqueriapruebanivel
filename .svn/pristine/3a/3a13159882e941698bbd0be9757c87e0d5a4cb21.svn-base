@@ -1,0 +1,139 @@
+.Pages .schedule-block img {
+    margin: 0 auto;
+}
+
+.Pages .schedule-block .table-wrap table {
+    width: 100%;
+}
+
+.pag a{
+    width: 50px;
+    height: 30px;
+    float: left;
+}
+
+.schedule-block table tr th:first-child {
+    padding-left: 2px !important; 
+}
+
+::placeholder{
+    color: black;
+    opacity: 1;
+}
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px !important;
+    line-height: 28px;
+    padding: 10px 0 20px;
+    margin: 10px 0 20px 0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.btn.btn-link-w {
+    height: 50px;
+}
+
+.btn.btn-link-w:hover {
+    color: #fff !important;
+    background-color: #eb7c00;
+}
+
+
+/* Copiados de bootstrap.min.css */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active {
+    background-image: none;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: inherit;
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input {
+    overflow: visible;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+
+/* Media Querys */
+
+@media only screen and (max-width: 767px) {
+    .Pages .schedule-block .table-wrap {
+        margin: 0;
+    }
+    .Pages .schedule-block .table-wrap table {
+        width: 100%;
+    }
+    .Pages .schedule-block table tr th:first-child {
+        padding-left: 15px !important;
+        width: 25%;
+    }
+}

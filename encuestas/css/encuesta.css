@@ -1,0 +1,109 @@
+header {
+    display: none;
+}
+
+#page-content {
+    margin-top: 0 !important;
+}
+
+form {
+	width: 100%;
+}
+
+h2 {
+    font-size: 1.6em !important;
+    margin-bottom: 3rem;
+}
+
+h4 {
+    font-size: 1.15em !important;
+    /* Cortamos el texto si el título no cabe en una sola línea */
+    overflow:hidden;
+    /*white-space:nowrap;*/
+    text-overflow: ellipsis;
+}
+
+.rating li {
+	cursor: default;
+	display: inline-block;
+	font-size: 30px;
+	list-style-type: none;
+	line-height: 40px;
+}
+
+.star,
+.rating:not(.vote-cast):hover .star:hover ~ .star,
+.rating.vote-cast .star.selected ~ .star {
+	/* normal state */
+	color: black;
+}
+
+.rating:hover .star,
+.rating.vote-cast .star {
+	/* highlighted state */
+	color: #eb7c00;
+}
+
+.boxed-form .form-group .form-control {
+	padding: 8px;
+}
+
+select {
+    height: 40px !important;
+}
+
+#submitOficinas {
+    margin: 0 auto;
+}
+
+.error {
+	color: red;
+}
+
+#respuesta {
+	font-size: 1.5em;
+	color: #1f7f1f;
+}
+
+.boxed-form .btn {
+    margin-left: 0;
+}
+
+li.star:hover {
+    cursor: pointer;
+}
+
+.bootstrap-select .dropdown-toggle{
+    background-color:white;
+    border: #eb7c00 2px solid;
+}
+.filter-option-inner-inner{color:#333;}
+
+/* Media queries */
+
+/* Tablet vertical+ */
+@media screen and (min-width: 768px) {
+	h2 {
+	    font-size: 2.2em !important;
+	    margin-bottom: 5rem;
+	}
+
+	h4 {
+        font-size: 1.2em !important;
+	}
+
+	.rating li {
+		font-size: 40px;
+	}
+
+	#submitOficinas {
+        margin: 2em 0 !important;
+	}
+}
+
+/* Tablet horizontal+ */
+@media screen and (min-width: 992px) {
+	#submitOficinas {
+        margin: 0 !important;
+	}
+}

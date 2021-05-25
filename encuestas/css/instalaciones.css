@@ -1,0 +1,178 @@
+.titular{
+	height: 75px;
+}
+.titulo{
+	color: #eb7c00;
+}
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #eb7c00;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+#block-estadisticas{
+    margin:50px auto 0px auto;
+    padding-bottom:75px;
+}
+
+.imageninstalaciones{
+	width: 100%;
+  	transition: transform .3s; /* Animation */
+}
+.imageninstalaciones:hover {
+    transform: scale(1.3);
+}
+
+.imageninstalaciones-2:hover {
+    transform: scale(1.1);
+}
+
+
+.col-md-6{
+	overflow: hidden;
+}
+.statistic-wrap-content h3{
+	font-size: 18px;
+	margin-top: 0rem;
+}
+.statistic-wrap-content h4{
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.icon i{
+	font-size: 50px;
+}
+.statistic-block .statistic-wrap-content:hover {
+    background-color: #eb7c00; 
+}
+
+
+
+/*
+    ESTILO 1
+*/
+.estadisticas-box{
+    background-color: #000;
+    background-size: 100%;
+    height:180px;
+    border-bottom:3px solid #EB7C00;
+    opacity: 1;
+    color:white;
+    font-size: 1.5em;
+    padding:0px 0px 0px 0px;
+    text-align:center;
+}
+
+.estadisticas-box img{
+    max-height: 100px;
+    width: 50%;
+    margin:0 auto;
+}
+
+.estadisticas-box h3{
+    font-weight: bold;
+    text-align:center;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    margin-top: 0rem;
+    color: #EB7C00;
+    font-size:30px;
+}
+
+.estadisticas-box h4{
+    text-align:center;
+    color: white;
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-size:20px;
+}
+
+/*  ***************************************************************************
+    ESTILO 2
+*/
+.estadisticas-box-2{
+    background-color: #f6f6f6;
+    background-size: 100%;
+    height:200px;
+    opacity: 1; /*0.8*/
+    font-size: 1.5em;
+    padding:0px 0px 0px 0px;
+    text-align:center;
+}
+
+.estadisticas-box-2 img{
+    height: 100px;
+    width: 250px;
+    margin:0 auto;
+}
+
+
+.efecto-escalado
+{   transition: all .2s ease-in-out;
+     transform:scale(1.1);
+}
+
+.estadisticas-box-2 h3{
+    font-weight: bold;
+    text-align:center;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    margin-top: 0rem;
+    color: #EB7C00;
+    font-size: 30px;
+}
+
+.estadisticas-box-2 h4,.estadisticas-box-2 p{
+    text-align:center;
+    color: black;
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-size:20px;
+    width:auto;
+}
+
+.estadisticas-box-2 p span{
+    border-bottom:3px solid #EB7C00;
+}
+
+
+.parallax { 
+    height: 400px; 
+    margin-top: 10px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax p{
+	margin: 50px;
+	color:black;
+	background-color: rgba(247, 247, 247, 0.6);
+	font-family: "RobotoCondensedRegular", sans-serif;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.parallax h4{
+	padding: 50px;
+	color:black;
+	background-color: rgba(247, 247, 247, 0.6);
+	text-transform: uppercase;
+	font-family: "RobotoCondensedRegular", sans-serif;
+	width: 50%;
+}
+@media only screen and (max-width: 767px) {
+	.parallax h4{
+		padding: 10px;
+		width: 100%;
+	}
+	.parallax p {
+    	margin-top: 75px;
+    	font-size: 1em;
+  	}
+}

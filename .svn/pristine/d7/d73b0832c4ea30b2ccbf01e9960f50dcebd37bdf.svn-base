@@ -1,0 +1,50 @@
+.post-title{
+	margin-top: -40px;
+}
+
+.blog-post{
+	margin-top: 20px;
+}
+.date-wrap{
+    width: 120px;
+}
+
+.btn {
+    height: 40px;
+}
+.category-list li a{
+	color:orange;
+	font-size: 20px;
+}
+
+.tags-list li a {
+	color:orange;
+	font-size: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+.post-date span {
+    margin-top: 17px !important;
+}
+.reservas{
+	border:#f38b16 1px solid;
+	border-radius:5px;
+	padding-left:10px;
+}
+.calendar-title{
+	font-size: 1.2em !important;
+}
+
+.alert-warning{
+
+	margin-top: 15%;
+	color:#856404;
+	background-color:#fff3cd;
+	border-color:#ffeeba
+}
+
+#page-content {
+    min-height:950px;
+}

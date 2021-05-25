@@ -1,0 +1,362 @@
+<?php
+	class inscripciones_escuelas {
+
+		public static function findUser($usuario) {
+			$query = db::singleton()->query('SELECT * FROM usuarios WHERE usuario = "'.$usuario.'"');
+
+			if ($query) {
+				return $query->fetch();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		/* INSCRIPCIONES a Campus tecnificacion femenina que estan en vbasket*/
+		public static function findInscripcionesporPedido($id) {
+			$query = dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE numero_pedido = "'.$id.'"');
+
+			if ($query) {
+				return $query->fetch();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		public static function findAllInscripciones() {
+			$query = dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE eliminado = 0 AND fecharegistro > "2020-01-01" ORDER BY numero_pedido DESC');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		//para la consulta de exportar a excel
+		public static function findAllInscripcionesExcel() {
+			$query = dbvbasket::singleton()->query('SELECT fecharegistro, numero_pedido, convert(cast(convert(nombre using latin1) AS binary) using utf8) AS nombre, convert(cast(convert(apellidos using latin1) AS binary) using utf8) AS Apellidos, fechanacimiento, dni, club, tallacamiseta, transporte, enfermedad, convert(cast(convert(alergias using latin1) AS binary) using utf8) AS alergias, convert(cast(convert(tratamientosmedicos using latin1) AS binary) using utf8) AS tratamientosmedicos, convert(cast(convert(operacionreciente using latin1) AS binary) using utf8) AS operacionreciente, convert(cast(convert(observaciones using latin1) AS binary) using utf8) AS observaciones, convert(cast(convert(nombretutor using latin1) AS binary) using utf8) AS nombretutor, convert(cast(convert(apellidos using latin1) AS binary) using utf8) AS apellidostutor, telefonotutor, emailtutor, dnitutor, convert(cast(convert(direccion using latin1) AS binary) using utf8) AS direccion, numero, piso, puerta, cp, provincia, convert(cast(convert(poblacion using latin1) AS binary) using utf8) AS poblacion, autorizodatos, autorizoimagen, tipo_pago, if(pagado=1, "Si", "No") AS pagado, importe, opcion  FROM registros_escuela_tecnificacion_femenina WHERE eliminado = 0 AND fecharegistro > "2020-01-01" ORDER BY numero_pedido DESC');
+
+			if ($query) {
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		//cuando se paga desde oficinas por el back marcamos el pedido como pagado =1
+		public static function actualizapagadoescuelafem($codigo, $pagado) {
+			$sql = "UPDATE registros_escuela_tecnificacion_femenina SET pagado = :pag, tipo_pago = :tipopag WHERE numero_pedido = :numero";
+
+			$query = dbvbasket::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $codigo, ':pag' => $pagado, ':tipopag' => "OFICINA");
+
+			if (!$query->execute($datos)) {
+				return false;
+			} 
+			else {
+				echo "<script text='javascript'>
+						alert('El pago se grabó correctamente');
+						window.location.replace('?r=campus/BackEscuelas');
+					</script>";
+				die;
+			}
+		}
+
+
+		/*  MODIFICACION DE LA FICHA DEL INSCRITO DESDE EL BACK */
+		public static function updatefichaescuelafem($idinscripcion,$dnijugador,$nombre,$apellidos,$date, $club, $talla, $direccion, $numero, $piso, $puerta, $poblacion, $cp, $prov, $nombretutor, $apeltutor, $dnitutor, $tlftutor, $email, $alergias, $tratam, $transporte, $enfermedad, $observ, $operaciones, $turno, $sip)
+		{
+			error_log("id_inscrip en update escuela tec fem= ".$idinscripcion,1);
+			$sql = "UPDATE registros_escuela_tecnificacion_femenina SET nombre=:nombre, apellidos=:apel, fechanacimiento=:fechan, dni=:dnij, club=:club, tallacamiseta=:talla, transporte=:transp, enfermedad=:eferm, alergias=:alerg, tratamientosmedicos=:tratm, operacionreciente=:oper, observaciones=:observ, nombretutor=:nomtut, apellidostutor=:apeltut, dnitutor=:dnitut, direccion=:direc, numero=:num, piso=:piso, puerta=:puerta, cp=:cp, provincia=:prov, poblacion=:pob, telefonotutor=:telef, emailtutor=:email, opcion=:t2, ficherosubido1=:sip  
+				WHERE id=:numero";
+			$query = dbvbasket::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $idinscripcion, ':dnij' => $dnijugador, ':nombre' => $nombre, ':apel' => $apellidos, ':fechan' => $date, ':club' => $club, ':talla' => $talla, ':direc' => $direccion, ':num' => $numero, ':piso' => $piso, ':puerta' => $puerta, ':pob' => $poblacion, ':cp' => $cp, ':prov' => $prov, ':nomtut' => $nombretutor, ':apeltut' => $apeltutor, ':dnitut' => $dnitutor, ':telef' => $tlftutor, ':email' => $email, ':alerg' =>$alergias, ':tratm' =>$tratam, ':transp' =>$transporte, ':eferm' =>$enfermedad, ':observ' =>$observ, ':oper' =>$operaciones, ':t2' =>$turno, ':sip' =>$sip);
+
+			//error_log(print_r($datos,1));
+			//die;
+
+			if (!$query->execute($datos)) {
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+
+
+		public static function DardebajaEscuelaTecFemenina($codigo) {
+			$sql = "UPDATE registros_escuela_tecnificacion_femenina SET eliminado = 1  WHERE numero_pedido = :numero";
+			$query = dbvbasket::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $codigo);
+
+			if (!$query->execute($datos)) {
+				return false;
+			} 
+			else {
+				echo "<script text='javascript'>
+						alert('El registro se eliminó correctamente');
+						window.location.replace('?r=campus/BackEscuelas');
+					</script>";
+				die;
+			}
+		}
+
+
+		public static function findInscripcionesPagadas() {
+			$query = dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE pagado=1 AND eliminado=0 AND fecharegistro>"2020-01-01" ORDER BY numero_pedido DESC');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		public static function findInscripcionesNoPagadas() {
+			$query = dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE pagado=0 AND eliminado=0 AND fecharegistro>"2020-01-01" ORDER BY numero_pedido DESC');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+		public static function findInscripcionPorById($idinscripcion)
+        {
+			
+			return dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE id = '.$idinscripcion)->fetch();
+		}
+
+
+		public static function findInscripcionPorEmail($email) {
+			return dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE email = "' . $email . '"')->fetchAll();
+		}
+
+
+		public static function findInscripcionPorFecha($fecha) {
+			return dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE fecharegistro = "' . $fecha . '"')->fetchAll();
+		}
+
+
+		public static function findInscripcionesPorEstado($estado) {
+			return dbvbasket::singleton()->query('SELECT * FROM registros_escuela_tecnificacion_femenina WHERE fecharegistro>"2020-01-01" AND pagado = "' . $estado . '"')->fetchAll();
+		}
+
+
+
+		/*
+			Escuela PASCUA Back  AHORA ESTA EN ALQUERIA
+		*/
+
+		public static function findInscripcionesPascuaPagadas()	{			
+			$query = db::singleton()->query('SELECT * FROM registros_escuela_pascua WHERE eliminado=0 AND fecharegistro>"2020-01-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		// Para la consulta de exportar a excel
+		public static function findAllInscripcionesExcelEscuelaPascua()	{			
+			$query = db::singleton()->query('SELECT fecharegistro, numeropedido, convert(cast(convert(nombre using latin1) AS binary) using utf8) AS nombre, convert(cast(convert(apellidos using latin1) AS binary) using utf8) AS apellidos, dni, fechanacimiento, convert(cast(convert(opcion using latin1) AS binary) using utf8) AS opcion, turno1, turno2, turno3, turno4, club, convert(cast(convert(observaciones using latin1) AS binary) using utf8) AS observaciones, telefonotutor, convert(cast(convert(nombretutor using latin1) AS binary) using utf8) AS nombretutor, convert(cast(convert(apellidostutor using latin1) AS binary) using utf8) AS apellidostutor, emailtutor, dnitutor, direccion, numero, piso, puerta, cp, provincia, poblacion, autorizodatos, autorizoimagen, if(pagado=1, "Si", "No") AS pagado, tipo_pago, importe, evento FROM registros_escuela_pascua WHERE eliminado = 0 AND fecharegistro > "2020-01-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}
+			else {
+				return false;
+			}
+		}
+		 
+
+		public static function actualizapagadoescuelapascua($id, $pagado) {
+			$sql = "UPDATE  registros_escuela_pascua SET pagado=:pag, tipo_pago=:tipopag WHERE id=:numero";
+
+			$query = db::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $id, ':pag' => $pagado, ':tipopag' => "OFICINA");
+
+			if (!$query->execute($datos)) {
+				return false;
+			}
+			else {
+				echo "<script text='javascript'>
+						alert('El pago se grabo correctamente');
+						window.location.replace('?r=campus/BackEscuelaPascua');
+					</script>";
+				die;
+			}
+		}
+
+
+
+		/*
+			Escuela verano del VBC Back en vb
+		*/
+
+		public static function damedatosescuelaverano($numero) {
+			return dbvbasket::singleton()->query('SELECT * FROM registros_escuela_veranovb WHERE numeropedido = '.$numero)->fetch();
+		}     
+
+
+		public static function findInscripcionesporPedidoEscuelaveranovb($id) {
+			$query = dbvbasket::singleton()->query('SELECT * FROM registros_escuela_veranovb WHERE numeropedido = "'.$id.'"');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		public static function findAllInscripcionesEscuelaVeranoVB() {		   
+			$query = dbvbasket::singleton()->query('SELECT * FROM registros_escuela_veranovb WHERE eliminado = 0 AND fecharegistro >= "2020-01-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		//para la consulta de exportar a excel
+		public static function findAllInscripcionesExcelEscuelaVeranoVB() {
+			$query = dbvbasket::singleton()->query('SELECT fecharegistro, numeropedido, convert(cast(convert(nombre using latin1) AS binary) using utf8) AS nombre, convert(cast(convert(apellidos using latin1) AS binary) using utf8) AS Apellidos, fechanacimiento, genero, dni, semana1, semana2, semana3, semana4, semana5, diassueltos, club,   convert(cast(convert(enfermedad using latin1) AS binary) using utf8) AS ObserMedicas,   convert(cast(convert(nombretutor using latin1) AS binary) using utf8) AS nombretutor, convert(cast(convert(apellidos using latin1) AS binary) using utf8) AS apellidostutor, telefonotutor, emailtutor, dnitutor, convert(cast(convert(direccion using latin1) AS binary) using utf8) AS direccion, numero, piso, puerta, cp, provincia, convert(cast(convert(poblacion using latin1) AS binary) using utf8) AS poblacion, autorizodatos, autorizoimagen, tipo_pago, if(pagado=1, "Si", "No") AS pagado, importe FROM registros_escuela_veranovb WHERE eliminado = 0  AND fecharegistro >= "2020-01-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		public static function DardeBajaEscuelaVeranoVB($pedido) {
+			$sql = "UPDATE registros_escuela_veranovb SET eliminado=1  WHERE numeropedido=:numero";
+			$query = dbvbasket::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $pedido);
+
+			if (!$query->execute($datos)) {
+				return false;
+			}
+			else {
+				echo "<script text='javascript'>
+						alert('El registro se elimino correctamente');
+						window.location.replace('?r=campus/BackEscuelaVeranoVB');
+					</script>";
+				die;
+			}
+		}
+
+
+		//cuando se paga desde oficinas por el back marcamos el pedido como pagado =1
+		public static function ActualizaPagadoEscuelaVeranoVb($codigo, $pagado) {
+			$sql = "UPDATE registros_escuela_veranovb SET pagado=:pag, tipo_pago=:tipopag WHERE numeropedido=:numero";
+			$query = dbvbasket::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $codigo, ':pag' => $pagado, ':tipopag' => "OFICINA");
+
+			if (!$query->execute($datos)) {
+				return false;
+			} 
+			else {
+				echo "<script text='javascript'>
+						alert('El pago se grabo correctamente');
+						window.location.replace('?r=campus/BackEscuelaVeranoVB');
+					</script>";
+				die;
+			}
+		}
+
+
+
+		/*
+			BACK ESCUELA DE VERANO DE L'ALQUERIA
+		*/
+
+		public static function findInscripcionesporPedidoEscuelaveranoalq($id) {
+			$query = db::singleton()->query('SELECT * FROM registros_escuela_verano WHERE numeropedido = "'.$id.'"');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		public static function findAllInscripcionesEscuelaVeranoAlq() {
+			$query = db::singleton()->query('SELECT * FROM registros_escuela_verano WHERE eliminado = 0 AND fecharegistro >= "2020-01-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		//para la consulta de exportar a excel
+		public static function findAllInscripcionesExcelEscuelaVeranoAlq() {
+			$query = db::singleton()->query('SELECT fecharegistro, numeropedido, convert(cast(convert(nombre using latin1) AS binary) using utf8) AS nombre, convert(cast(convert(apellidos using latin1) AS binary) using utf8) AS Apellidos, genero, fechanacimiento, dni, semana1 as SemanaAnulada, semana2 as Semana1, semana3 as Semana2, semana4 as Semana3, semana5 as semana4, semana6 as Semana5, diassueltos, convert(cast(convert(club using latin1) AS binary) using utf8) AS Club, convert(cast(convert(tratamientosmedicos using latin1) AS binary) using utf8) AS ObserMedicas, convert(cast(convert(nombretutor using latin1) AS binary) using utf8) AS nombretutor, convert(cast(convert(apellidos using latin1) AS binary) using utf8) AS apellidostutor, telefonotutor, emailtutor, dnitutor, convert(cast(convert(direccion using latin1) AS binary) using utf8) AS direccion, numero, piso, puerta, cp, provincia, convert(cast(convert(poblacion using latin1) AS binary) using utf8) AS poblacion, autorizodatos, autorizoimagen, tipopago, if(pagado=1, "Si", "No") AS pagado, importe FROM registros_escuela_verano WHERE eliminado = 0 AND fecharegistro >= "2020-01-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}
+			else {
+				return false;
+			}
+		}
+	}
+?>

@@ -1,0 +1,7 @@
+.owl-carousel.owl-drag .owl-item{
+    padding:0px 15px;
+}
+
+.page-contacts-block .message-wrap .form-group textarea.form-control{
+    height:200px;
+}

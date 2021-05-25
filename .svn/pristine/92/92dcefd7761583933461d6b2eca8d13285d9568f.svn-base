@@ -1,0 +1,5386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.008.001.02">
+  <CstmrDrctDbtInitn>
+    <GrpHdr>
+      <MsgId>20181128184348</MsgId>
+      <CreDtTm>2018-11-28T18:11:48</CreDtTm>
+      <NbOfTxs>190</NbOfTxs>
+      <CtrlSum>22695</CtrlSum>
+      <InitgPty>
+        <Nm>FUNDACION VALENCIA BASQUET 2000</Nm>
+        <Id>
+          <OrgId>
+            <Othr>
+              <Id>ES45000G96614474</Id>
+              <SchmeNm>
+                <Cd>CORE</Cd>
+              </SchmeNm>
+            </Othr>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>2RCUR20181128</PmtInfId>
+      <PmtMtd>DD</PmtMtd>
+      <NbOfTxs>190</NbOfTxs>
+      <CtrlSum>22695</CtrlSum>
+      <PmtTpInf>
+        <SvcLvl>
+          <Cd>SEPA</Cd>
+        </SvcLvl>
+        <LclInstrm>
+          <Cd>CORE</Cd>
+        </LclInstrm>
+        <SeqTp>RCUR</SeqTp>
+      </PmtTpInf>
+      <ReqdColltnDt>2018-11-28</ReqdColltnDt>
+      <Cdtr>
+        <Nm>FUNDACION VALENCIA BASQUET 2000</Nm>
+      </Cdtr>
+      <CdtrAcct>
+        <Id>
+          <IBAN>ES2931590009962339424422</IBAN>
+        </Id>
+      </CdtrAcct>
+      <CdtrAgt>
+        <FinInstnId>
+          <BIC>CAIXESBBXXX</BIC>
+        </FinInstnId>
+      </CdtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtrSchmeId>
+        <Id>
+          <PrvtId>
+            <Othr>
+              <Id>ES45000G96614474</Id>
+              <SchmeNm>
+                <Prtry>SEPA</Prtry>
+              </SchmeNm>
+            </Othr>
+          </PrvtId>
+        </Id>
+      </CdtrSchmeId>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-1</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>1</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>adrian  garcia mirabet</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3521003807220200032718</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-2</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>2</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ADRIAN  LOPEZOSA EXPOSITO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4701827710410208542747</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-3</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>3</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Adrian Pascual Muñoz</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1700751423890700097564</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-4</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>4</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ADRIAN RODRIGO DE ANDRES</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0221001946790200060810</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-5</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>5</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Adrián García Tejadillos</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3601280647470100014127</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-6</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>6</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>AITANA MORA GISBERT -- JORGE MORA GISBERT</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7500810395480006260736</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-7</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>7</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Aitana Vázquez Gómez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6630582237952810700158</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-8</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>8</MndtId>
+            <DtOfSgntr>2018-07-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>AKIRA BORJA CATALAN MOTONISHI</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1600815554730001107712</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-9</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>9</MndtId>
+            <DtOfSgntr>2018-07-03</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alan Romero Carbonell </Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8601820532840208518307</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-10</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>10</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alba Cámara Martínez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2220859366180330119957</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-11</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>11</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alba Puentes Alonso -- Mar Puentes Alonso</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1500308353210001614272</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-12</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>12</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ALBA SÁNCHEZ PITARCH</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9121002341470200013381</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-13</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>13</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ALBERTO GUERRERO LLOMBART</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5320386088203000084724</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-14</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>14</MndtId>
+            <DtOfSgntr>2018-07-04</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alejandro Asensi Ayuso</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6720386173603000676267</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-15</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>15</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alejandro Esteban Bernat</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3200815502190006306244</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-16</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>16</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alejandro Larraz Díez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8521009019052200145045</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-17</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>17</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alejandro López-Lucendo Estévez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9500301539100018987271</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-18</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>18</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ALEJANDRO PIQUER FERRER</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6020386543913001478061</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-19</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>19</MndtId>
+            <DtOfSgntr>2018-07-06</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alejandro Rodriguez-Nuñez Medina</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8101280623190102106627</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-20</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>20</MndtId>
+            <DtOfSgntr>2018-09-05</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Alvaro Colado Ruiz</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4601827710440208533015</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-21</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>21</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ALVARO NAGORE TANNUS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3621000727870200151796</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-22</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>22</MndtId>
+            <DtOfSgntr>2018-07-12</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ANDREA PARICIO RAMIRO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7214650100961725556224</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-23</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>23</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ANDREA PEREZ GARCIA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5320386160503000529249</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-24</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>24</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ANDREA TIZON FRANCO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1520386160516000117920</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-25</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>25</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ANGEL GARRIGUES SANCHEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9500494900082395030051</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-26</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>26</MndtId>
+            <DtOfSgntr>2018-07-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ARIEL PATRICIO PESANTES JARAMILLO -- BIANCA CAROLINA PESANTES JARAMILLO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3820859360260330035866</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-27</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>27</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Arturo Sanchis-Bayarri -- Lucas Sanchis-Bayarri</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8221005266322100026345</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-28</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>28</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Ángel Herreros Vivó</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1020386173633000481206</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-29</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>29</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Bernat Aznar Pérez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0221004364640100183711</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-30</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>30</MndtId>
+            <DtOfSgntr>2018-07-03</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>BIEL VELASCO MERENCIANO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9001821520390201669109</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-31</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>31</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>BLANCA SALCEDO VIDAL</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0500495999912395053067</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-32</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>32</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>BORJA FIGUERÒN RODRÍGUEZ -- JOSEP FIGUERÒN RODRÍGUEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3621004343710100327366</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-33</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>33</MndtId>
+            <DtOfSgntr>2018-07-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>BRUNO ESPOSITO -- MARCO ESPOSITO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2200494489112010006679</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-34</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>34</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>BRUNO JIMÉNEZ VICO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7321007297352100125406</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-35</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>35</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CALVIN GARCIA BERNOTIENE</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9431590048332137469322</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-36</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>36</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CARLA FERRANDIZ MONTESINOS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0531590009991662978426</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-37</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>37</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CARLA SALAVERT MARTI</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7020386124403000146725</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-38</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>38</MndtId>
+            <DtOfSgntr>2018-07-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CARLOS DOMINGO PINO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8121005165522100153429</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-39</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>39</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CARLOS GONZÁLEZ JURADO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2400493098862814249854</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-40</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>40</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CARLOS PINILLA LLÁCER -- SABINA PINILLA LLACER</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8700491419512790085452</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-41</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>41</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CARLOS SILLA TEBAR</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6001826579140201570505</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-42</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>42</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Cesar Alabarda Carraascosa -- Gonzalo Alabarda Roitegui</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1600493098822114244844</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-43</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>43</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CESC MOMPO AGUILAR</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4820386025543000502428</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-44</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>44</MndtId>
+            <DtOfSgntr>2018-07-03</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Charles Matousek -- Georgia Elizabeth Matousek</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0821006621892200375220</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-45</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">205</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>45</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CHLOE TORRES GARCIA -- Sergio Torres García</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3620386400243001227705</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-46</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>46</MndtId>
+            <DtOfSgntr>2018-07-04</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CLAUDIA CLAVER MORALES</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9401829502290201582961</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-47</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>47</MndtId>
+            <DtOfSgntr>2018-07-05</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CLAUDIA FRANCÉS SERRANO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4601280648910100025321</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-48</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>48</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CLAUDIA SANCHEZ MINGUEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9720386291543001113896</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-49</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>49</MndtId>
+            <DtOfSgntr>2018-07-01</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Cristina Pons Guerrero</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4401829553370204914615</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-50</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>50</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>CRISTINA VERDEJO FILGUEIRAS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7520386580413000284612</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-51</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>51</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Daniel Bartual Bixquert</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5401820112960201505243</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-52</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>52</MndtId>
+            <DtOfSgntr>2018-06-29</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DANIEL CLIMENT VIDAL</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7821006168080100032710</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-53</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>53</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DANIEL GUIJARRO SIFRE</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1730582249552810007201</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-54</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>54</MndtId>
+            <DtOfSgntr>2018-07-02</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DANIEL MARTINEZ ZAMORANO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9200810166110006227036</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-55</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>55</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Daniel Masip Cantero</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9600495442292095000401</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-56</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>56</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DANIEL SALA HERRERO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1114650120311709624929</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-57</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>57</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DARIO SIELVA JIMENEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2001827312930201514893</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-58</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>58</MndtId>
+            <DtOfSgntr>2018-07-05</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>david esteve cabellos</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7520858031200330027351</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-59</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>59</MndtId>
+            <DtOfSgntr>2018-06-30</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DAVID GIL GUIJARRO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3521007351000200017034</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-60</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>60</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>David Murgui Arrabal -- Victor murgui arrabal</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4800490185542210165307</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-61</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>61</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DIEGO CIVERA -- GUILLERMO CIVERA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7400303071820001617271</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-62</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>62</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>DIEGO PRUDENCIO JUAN -- MARIO PRUDENCIO JUAN</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0721004493740200100940</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-63</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>63</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ELENA ZAFRA CARLOS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1800811326140006450260</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-64</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>64</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ENRIQUE TORREGROSA PÉREZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4701820499190011505398</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-65</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>65</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>FEDERICO CASTEJON -- SARA CASTEJON PASTOR</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4401286013300100008804</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-66</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>66</MndtId>
+            <DtOfSgntr>2018-07-02</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>FERNANDO CRESPO SOLIS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8001820507960208001582</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-67</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>67</MndtId>
+            <DtOfSgntr>2018-07-16</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>FLORA  MARTINEZ ORTEGA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9720389608123001665964</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-68</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>68</MndtId>
+            <DtOfSgntr>2018-07-05</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>GABRIELA SEGURA MORENO -- PEPE SEGURA MORENO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4120386200573000613355</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-69</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>69</MndtId>
+            <DtOfSgntr>2018-07-04</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>GEMMA  MOLLA VIGUER</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8430582135672810015084</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-70</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>70</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>geraldine osorio soto</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8020381343243000677282</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-71</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>71</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>GONZALO DELAS BLASCO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2721006505860200014427</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-72</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>72</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Guillem Cerdá Gay</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1421005510062100173007</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-73</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>73</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>GUILLERMO DIAZ GUSTOS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4221005510070200028396</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-74</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>74</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Guillermo Ferrer Sandemetrio</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2101280600310100096974</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-75</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>75</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>HÉCTOR GARCÍA BIOT</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8701829553380203835249</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-76</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>76</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>HÉCTOR Montejano Llácer</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7920386228673000124132</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-77</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>77</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>HUGO BAVIERA MORA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5502390806710056630726</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-78</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>78</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>HUGO HUESCA CHOVER</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1020386394213000376572</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-79</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>79</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>HUGO VIUDEZ PALACIOS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8220859357700100342306</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-80</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>80</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>IKER CEREZO ARCHILLA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6120386349936000153987</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-81</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">160</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>81</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>IRENE  MUÑOZ REGALADO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0720386087873000223260</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-82</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>82</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Irene Bautista Castillo</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8100303191610395225273</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-83</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>83</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>IRENE BELENGUER LLUCH</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5221005068580200074589</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-84</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>84</MndtId>
+            <DtOfSgntr>2018-07-11</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>irene ramiro del campo</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6000811299010006020811</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-85</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>85</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JAIME BAYDAL CORDOBA -- LORENA BAYDAL CORDOBA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3000730100530413726793</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-86</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>86</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Jaume Vendrell García</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6400491736712590140396</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-87</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>87</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Javier  Ramos Aguilar</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8200308353210001299271</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-88</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>88</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Javier Calatayud Candel</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8320859362190330179635</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-89</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>89</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JAVIER ELENA CASTILLA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0230582243882810010616</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-90</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>90</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JAVIER GIRONES MORENO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0501820501160201525418</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-91</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>91</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Javier Rubio Monfort</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4714650716591719928071</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-92</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">160</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>92</MndtId>
+            <DtOfSgntr>2018-07-14</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Jesús Montesinos Cano</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5121056118913010010658</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-93</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>93</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Jesus Fuentes</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7531590020212232164216</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-94</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>94</MndtId>
+            <DtOfSgntr>2018-07-12</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JINHAN ZHENG</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9000495880702495036998</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-95</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>95</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Joan Biniyam Fortún López</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5700190553274010018684</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-96</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>96</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JORGE GIL MARTINEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1400751423830605251991</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-97</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>97</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Jorge Lopez Garcia</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2230250010201400035956</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-98</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>98</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JORGE MAKSIM GONZÁLEZ LLEDÓ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0901820508390201561020</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-99</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>99</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JORGE PASCUAL DOLÓN</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6600811327440006364650</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-100</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>100</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Jorge Torres Marco</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3121007400332100161947</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-101</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>101</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>JUAN LOZANO ANTON</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1900810291210001431944</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-102</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>102</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Judit Ruiz Ráez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7100491021112910320185</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-103</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>103</MndtId>
+            <DtOfSgntr>2018-07-13</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Lora Aoudi</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9001822734880201508329</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-104</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>104</MndtId>
+            <DtOfSgntr>2018-07-07</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Luana Rosario Lara Ortega</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7001824505790201539987</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-105</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>105</MndtId>
+            <DtOfSgntr>2018-07-10</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>lucas soler romance</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6921001678710100101607</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-106</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>106</MndtId>
+            <DtOfSgntr>2018-07-05</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>lucia  espert montañana</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6531792375702810011200</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-107</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>107</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Lucia Forriols Fores</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7320385780113000676385</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-108</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>108</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>LUCIA RAMOS JIMENEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8921006106810100039795</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-109</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>109</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Lucia Villora Pitarch</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6721005695550200102868</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-110</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>110</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MANUEL VEINTIMILLA COMES</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4621004854772100229203</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-111</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>111</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MAR PUNZANO SORIANO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6221001948620200113037</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-112</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>112</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Marc Casillas García</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9200811324000006042314</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-113</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>113</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MARC SAIZ CARLOS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5700495417352393030776</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-114</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>114</MndtId>
+            <DtOfSgntr>2018-07-18</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>marc tordera sancho</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5900811516190001071215</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-115</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>115</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Marco Aguilar Alcala</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2901827710440208513921</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-116</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>116</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Marcos Andujar Gracía</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8600496024472016086707</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-117</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>117</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Marcos Monzonís Núñez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2400190071134010028932</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-118</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>118</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Marcos Recuero Garrido</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2921005084180200053562</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-119</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>119</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Marcos Sánchez Villanueva </Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6920389670673000389682</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-120</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>120</MndtId>
+            <DtOfSgntr>2018-07-06</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MARIA  ARNAU LATORRE</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8121006168020200056925</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-121</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>121</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MARIA ALVAREZ LABRADOR -- PABLO ALVAREZ LABRADOR</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8314650100951701316745</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-122</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>122</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MARIA JOSE BUITRAGO AMADOR</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4714650100951718649935</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-123</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>123</MndtId>
+            <DtOfSgntr>2018-06-29</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Maria Martin Valero</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4630582142122810001623</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-124</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>124</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MARINA BERNAL MARTINEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8320386537143000077160</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-125</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>125</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MARIO ROCHE ESPERT</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7702392076200057985723</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-126</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>126</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Marko  Skrbic Sanchis</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9221005068590200051316</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-127</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>127</MndtId>
+            <DtOfSgntr>2018-08-29</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Martin  Carbonell  Gavidia</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1901826587870201501209</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-128</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">160</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>128</MndtId>
+            <DtOfSgntr>2018-07-11</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MARTINA LUENGO MATEO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3400490068052610262047</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-129</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>129</MndtId>
+            <DtOfSgntr>2018-07-18</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>martina oliver orzco</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8600810166110006385254</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-130</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>130</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MATEO MARCO CANTO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6200303142460001112271</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-131</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>131</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MATIAS ALMELA LOPEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3020859361770330107278</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-132</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>132</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MAURO SANCHIS CARRIO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2920386138123000510430</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-133</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>133</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MAYTE DURAN GALLART</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2030582001272810102399</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-134</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>134</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MIGUEL REDONDO COMPAÑ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1820858114540330022658</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-135</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>135</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>miguel vicente vicent</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6201826134380201716188</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-136</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>136</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>MIREIA LOPEZ SEBASTIA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9721009108252200514789</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-137</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>137</MndtId>
+            <DtOfSgntr>2018-07-14</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>nacho  Congost Abellon -- Ramon Congost Abellon</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9820386309163000412463</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-138</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>138</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>NACHO VAZQUEZ MARTINEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6720386170293000054420</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-139</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>139</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>nain  chaabani escuder</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2101827038190201502422</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-140</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>140</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Natalia Urios Ferrer</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5821007372182100061552</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-141</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>141</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Nicolas  Navarro Sanchez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7730250010251400032975</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-142</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>142</MndtId>
+            <DtOfSgntr>2018-07-04</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>NICOLAS PERALES GARCIA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1830587065322810201585</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-143</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>143</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>NICOLÁS SÁNCHEZ PALOMO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3121001463140100365512</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-144</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>144</MndtId>
+            <DtOfSgntr>2018-06-30</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Nicolás Vilata Carreres</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2301826615140201557925</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-145</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>145</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>NTARE TWEHAMYE MONTAÑANA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7614650100912040803390</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-146</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>146</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Nuria Martínez Martínez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3920859357720330299039</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-147</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>147</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>OLIVER LOPEZ CHARIBA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4420386001283000696646</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-148</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>148</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>oscar anton soriano</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0820386535043000619390</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-149</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>149</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>OSCAR ROIG VALERO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8914650100931731588107</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-150</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>150</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Otto talcis -- tomas talcis</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5400817340840001896397</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-151</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>151</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PABLO  GALCERAN ORTEGA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3601827038160208502692</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-152</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">160</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>152</MndtId>
+            <DtOfSgntr>2018-06-29</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Pablo Alejo Santolaria Salvador </Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8900490363982590181859</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-153</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>153</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Pablo Antonio Martin Monroy</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8500490008782716955411</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-154</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>154</MndtId>
+            <DtOfSgntr>2018-07-16</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PABLO de los Santos Nácher</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8930582249572720006006</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-155</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>155</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PABLO FERRI BARCENAS </Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7700491732942990076346</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-156</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>156</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PABLO MARTINEZ LARA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6100495941692795001393</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-157</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>157</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PABLO NAVARRO ARGOTE</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8620800646563001015827</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-158</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">160</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>158</MndtId>
+            <DtOfSgntr>2018-10-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PAU AGUSTI MARTINEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8400495039282195050320</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-159</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">160</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>159</MndtId>
+            <DtOfSgntr>2018-10-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PAU MORALES DEL SAZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2901820509860201573536</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-160</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>160</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PAULA FONFRIA MATIES</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6901829465690200409892</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-161</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>161</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>paula garcía hernández</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4621005052012100052210</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-162</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>162</MndtId>
+            <DtOfSgntr>2018-06-23</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Paula López Riesgo</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6320386174053000244715</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-163</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>163</MndtId>
+            <DtOfSgntr>2018-07-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PAULA TORTAJADA CARRILLO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3601820581170201533712</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-164</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>164</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Pedro Sancho Moraga</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5000491736782710029783</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-165</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">190</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>165</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>pepa ibor buraglia -- rosa ibor buraglia</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6121004331020100074623</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-166</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>166</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PERE GARCIA ROMEU</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3821001485322100031499</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-167</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>167</MndtId>
+            <DtOfSgntr>2018-07-12</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>PHILIP RODRIGUEZ </Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6421002738390100466007</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-168</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>168</MndtId>
+            <DtOfSgntr>2018-07-12</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>RAÚL TORRES AGUILAR</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6000308354760000768272</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-169</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>169</MndtId>
+            <DtOfSgntr>2018-06-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>RAQUEL MORRÓ MARTÍNEZ</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES5200810166160001379548</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-170</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>170</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>REBECA MORIN MOROS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8100490427112090527142</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-171</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>171</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ROBERT GIMENO ARENAS</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES2430582100142860001604</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-172</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>172</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>ROBERTO PÉREZ CASTELBLANQUE</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7620386433856000035061</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-173</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>173</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>RODRIGO GARCIA SERRANO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1514650100991701159081</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-174</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>174</MndtId>
+            <DtOfSgntr>2018-07-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>RUBEN GUAITA YUBERO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7400495237082395439797</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-175</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>175</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Saúl Luz Torres</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3221007426532100128512</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-176</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>176</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Samuel Martínez Bru</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1814650100911724088279</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-177</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>177</MndtId>
+            <DtOfSgntr>2018-06-24</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Sandra Picazo Cases</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES0921004144452100030257</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-178</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>178</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Sandra Verea Gonzalez</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9400491283112090072440</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-179</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>179</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>SANTINO SERPA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1321000984540200028748</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-180</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>180</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>SARA BELLOCH DELGADO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4000190511484010103966</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-181</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>181</MndtId>
+            <DtOfSgntr>2018-06-28</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Sebastian Hagenbuch</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES9101827710450208682991</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-182</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">95</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>182</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Sergi Cano Zarza</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES6402392076280059723320</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-183</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>183</MndtId>
+            <DtOfSgntr>2018-07-20</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>SERGIO BLASCO SALES</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES1820385790703001254044</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-184</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>184</MndtId>
+            <DtOfSgntr>2018-06-21</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>SOFIA SERRANO DE LA OSSA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4120386160503000413453</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-185</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>185</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Sophie Christine Tirado Briët</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8001820501110208514424</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-186</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>186</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Toni Moral Sanmartín</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES8400810368670006591569</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-187</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>187</MndtId>
+            <DtOfSgntr>2018-06-26</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>Valentina Irigoyen Encina</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7114650100991800004371</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-188</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>188</MndtId>
+            <DtOfSgntr>2018-06-22</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>vicent ferrer pascual</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES7601820571240201587857</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-189</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>189</MndtId>
+            <DtOfSgntr>2018-06-27</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>YAGO ALVAREZ PRECIOSO</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES3600750003780706034060</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+      <DrctDbtTxInf>
+        <PmtId>
+          <EndToEndId>20181128184348-190</EndToEndId>
+        </PmtId>
+        <InstdAmt Ccy="EUR">110</InstdAmt>
+        <DrctDbtTx>
+          <MndtRltdInf>
+            <MndtId>190</MndtId>
+            <DtOfSgntr>2018-06-25</DtOfSgntr>
+          </MndtRltdInf>
+        </DrctDbtTx>
+        <DbtrAgt>
+          <FinInstnId>
+            <BIC>NOTPROVIDED</BIC>
+          </FinInstnId>
+        </DbtrAgt>
+        <Dbtr>
+          <Nm>YAGO PRIETO MORELLA</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>ES4021083232790035005217</IBAN>
+          </Id>
+        </DbtrAcct>
+        <RmtInf>
+          <Ustrd>Fundación 2000 Matricula Pendiente Noviembre 2018</Ustrd>
+        </RmtInf>
+      </DrctDbtTxInf>
+    </PmtInf>
+  </CstmrDrctDbtInitn>
+</Document>

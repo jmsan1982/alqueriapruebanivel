@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+BEGIN:VEVENT
+DTSTART:undefined
+DTEND:undefined
+SUMMARY:probando
+LOCATION:L'Alqueria del Basket: C/. Bomber Ramon Duart s/n. C.P.: 46013 (València)
+DESCRIPTION:<p>probandore tret</p>
+END:VEVENT
+END:VCALENDAR

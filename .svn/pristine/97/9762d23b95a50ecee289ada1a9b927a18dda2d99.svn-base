@@ -1,0 +1,939 @@
+<?php
+    class escuelaveranoController {
+
+        /* ESCUELA DE VERANO DE L´ALQUERIA DEL BASKET */
+
+        public function actionOk() {
+
+            require "models/escuela_verano.php";
+
+            $codigo = $_GET['codigo'];
+
+            $pagado = 1;
+
+
+            $actualizaestado = escuela_verano::actualizapagadoescuelaverano($codigo, $pagado);
+
+            $contenidocorreo = escuela_verano::damedatosescuelaverano($codigo);
+
+
+            $semanas = "";
+
+            /*if ($contenidocorreo['semana1'] == "sem1_comp") {
+                $semanas = "-Semana del 22 al 26 de Junio día completo";
+            }
+            elseif ($contenidocorreo['semana1'] == "sem1_manyana") {
+                $semanas = " -Semana del 22 al 26 de Junio solo mañanas";
+            }*/
+
+            if ($contenidocorreo['semana2'] == "sem2_comp") {
+                $semanas = "-Semana del 29 de Junio al 3 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana2'] == "sem2_manyana") {
+                $semanas = "-Semana del 29 de Junio al 3 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana3'] == "sem3_comp") {
+                $semanas = $semanas." -Semana del 6 al 10 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana3'] == "sem3_manyana") {
+                $semanas = $semanas." -Semana del 6 al 10 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana4'] == "sem4_comp") {
+                $semanas = $semanas." -Semana del 13 al 17 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana4'] == "sem4_manyana") {
+                $semanas = $semanas." -Semana del 13 al 17 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana5'] == "sem5_comp") {
+                $semanas = $semanas." -Semana del 20 al 24 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana5'] == "sem5_manyana") {
+                $semanas = $semanas." -Semana del 20 al 24 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana6'] == "sem6_comp") {
+                $semanas = $semanas." -Semana del 27 al 31 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana6'] == "sem6_manyana") {
+                $semanas = $semanas." -Semana del 27 al 31 de Julio solo mañanas";
+            }
+
+
+            $contenidocorreo['fechanacimiento'] = date("d/m/Y", strtotime($contenidocorreo['fechanacimiento']));
+
+            $contenido =
+            "Género: ".$contenidocorreo['genero'].
+            "<br>Nombre y apellidos: ".$contenidocorreo['nombre']." ".$contenidocorreo['apellidos'].
+            "<br>Fecha de nacimiento: ".$contenidocorreo['fechanacimiento'].
+            "<br>DNI: ".$contenidocorreo['dni'].
+            "<br>Semanas seleccionadas: ".$semanas.
+            "<br>Días sueltos: ".$contenidocorreo['diassueltos'].
+            "<br>Importe: ".$contenidocorreo['importe']."€".
+            "<br>Pago: ".$contenidocorreo['tipopago'].
+            "<br>Club: ".$contenidocorreo['club'].
+            "<br>Observaciones: ".$contenidocorreo['tratamientosmedicos'].
+            "<br>Nombre y apellidos tutor/a: ".$contenidocorreo['nombretutor']." ".$contenidocorreo['apellidostutor'].
+            "<br>Teléfono del tutor/a: ". $contenidocorreo['telefonotutor'].
+            "<br>Correo electrónico: ".$contenidocorreo['emailtutor'];
+
+            $enviodecorreo = escuela_verano::mailssend($contenidocorreo['numeropedido'], $contenido, "Ficha inscripción pago online Escuela Verano de L´Alqueria", $contenidocorreo['emailtutor']);
+
+            if ($enviodecorreo) {
+                vistaSimple("layout_ok");
+            }
+            else {
+                vistaSimple("layout_kocorreo");
+            }
+        }
+
+
+        public function actionokpagooficina() {
+
+            require "models/escuela_verano.php";
+
+            $codigo = $_GET['pedido'];
+
+
+            $contenidocorreo = escuela_verano::damedatosescuelaverano($codigo);
+
+
+            $semanas = "";
+
+            /*if ($contenidocorreo['semana1'] == "sem1_comp") {
+                $semanas = "-Semana del 22 al 26 de Junio día completo";
+            }
+            elseif ($contenidocorreo['semana1'] == "sem1_manyana") {
+                $semanas = "-Semana del 22 al 26 de Junio solo mañanas";
+            }*/
+
+            if ($contenidocorreo['semana2'] == "sem2_comp") {
+                $semanas = "-Semana del 29 de Junio al 3 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana2'] == "sem2_manyana") {
+                $semanas = "-Semana del 29 de Junio al 3 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana3'] == "sem3_comp") {
+                $semanas = $semanas." -Semana del 6 al 10 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana3'] == "sem3_manyana") {
+                $semanas = $semanas." -Semana del 6 al 10 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana4'] == "sem4_comp") {
+                $semanas = $semanas." -Semana del 13 al 17 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana4'] == "sem4_manyana") {
+                $semanas = $semanas." -Semana del 13 al 17 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana5'] == "sem5_comp") {
+                $semanas = $semanas." -Semana del 20 al 24 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana5'] == "sem5_manyana") {
+                $semanas = $semanas." -Semana del 20 al 24 de Julio solo mañanas";
+            }
+
+            if ($contenidocorreo['semana6'] == "sem6_comp") {
+                $semanas = $semanas." -Semana del 27 al 31 de Julio día completo";
+            }
+            elseif ($contenidocorreo['semana5'] == "sem6_manyana") {
+                $semanas = $semanas." -Semana del 27 al 31 de Julio solo mañanas";
+            }
+
+
+            $contenidocorreo['fechanacimiento'] = date("d/m/Y", strtotime($contenidocorreo['fechanacimiento']));
+
+            $contenido =
+            "Género: ".$contenidocorreo['genero'].
+            "<br>Nombre y apellidos: ".$contenidocorreo['nombre']." ".$contenidocorreo['apellidos'].
+            "<br>Fecha de nacimiento: ".$contenidocorreo['fechanacimiento'].
+            "<br>DNI: ".$contenidocorreo['dni'].
+            "<br>Semanas seleccionadas: ".$semanas.
+            "<br>Días sueltos: ".$contenidocorreo['diassueltos'].
+            "<br>Importe: ".$contenidocorreo['importe']."€".
+            "<br>Pago: ".$contenidocorreo['tipopago'].
+            "<br>Club: ".$contenidocorreo['club'].
+            "<br>Observaciones: ".$contenidocorreo['tratamientosmedicos'].
+            "<br>Nombre y apellidos tutor/a: ".$contenidocorreo['nombretutor']." ".$contenidocorreo['apellidostutor'].
+            "<br>Teléfono del tutor/a: ". $contenidocorreo['telefonotutor'].
+            "<br>Correo electrónico: ".$contenidocorreo['emailtutor'];
+
+            $enviodecorreo = escuela_verano::mailssend($contenidocorreo['numeropedido'], $contenido, "Ficha inscripción pago oficina Escuela Verano de L´Alqueria", $contenidocorreo['emailtutor']);
+
+            if ($enviodecorreo) {
+                 vistaSimple("layout_ok_pago_oficina");
+            }
+            else {
+                vistaSimple("layout_kocorreo");
+            }
+        }
+
+
+        public function actionKo() {
+
+            require "config.php";
+
+            vistaSimple("layout_ko");
+        }
+
+
+        public function actionImprimirFichaEscuelaVeranoAlq() {
+
+            // Comprobamos que el usuario tiene algún rol de administrador para continuar...
+            if (isset($_SESSION['usuario']) && ($_SESSION['rolusuario'] == "admin" || $_SESSION['rolusuario'] == "superadmin")) {
+
+                require "models/escuela_verano.php";
+
+
+                // Recogemos la variable "tipopago" de la URL para incluirla en el cuerpo del HTML
+                $tipopago = $_GET['tipopago'];
+
+                // Dependiendo del tipo de pago, asignamos un título al cuerpo del HTML
+                if ($tipopago == "OFICINA") {
+                    $seccioninscripcion = "Ficha inscripción pago oficina Escuela de Verano de L´Alqueria";
+                }
+                elseif ($tipopago == "ONLINE") {
+                    $seccioninscripcion = "Ficha inscripción pago online Escuela de Verano de L´Alqueria";
+                }
+
+
+                // Recogemos la variable "numeropedido" de la URL para pasársela al modelo e incluirla en el cuerpo del HTML
+                $numero = $_GET['numeropedido'];
+
+                // Recogemos todos los datos del registro pasándole el número de pedido
+                $contenidocorreo = escuela_verano::damedatosescuelaverano($numero);
+
+
+                $semanas = "";
+
+                if ($contenidocorreo['semana1'] == "sem1_comp") {
+                    $semanas = "-Semana del 22 al 26 de Junio día completo";
+                }
+                elseif ($contenidocorreo['semana1'] == "sem1_manyana") {
+                    $semanas = "-Semana del 22 al 26 de Junio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana2'] == "sem2_comp") {
+                    $semanas = "-Semana del 29 de Junio al 3 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana2'] == "sem2_manyana") {
+                    $semanas = "-Semana del 29 de Junio al 3 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana3'] == "sem3_comp") {
+                    $semanas = $semanas." -Semana del 6 al 10 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana3'] == "sem3_manyana") {
+                    $semanas = $semanas." -Semana del 6 al 10 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana4'] == "sem4_comp") {
+                    $semanas = $semanas." -Semana del 13 al 17 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana4'] == "sem4_manyana") {
+                    $semanas = $semanas." -Semana del 13 al 17 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana5'] == "sem5_comp") {
+                    $semanas = $semanas." -Semana del 20 al 24 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana5'] == "sem5_manyana") {
+                    $semanas = $semanas." -Semana del 20 al 24 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana6'] == "sem6_comp") {
+                    $semanas = $semanas." -Semana del 27 al 31 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana6'] == "sem6_manyana") {
+                    $semanas = $semanas." -Semana del 27 al 31 de Julio solo mañanas";
+                }
+
+
+                $contenidocorreo['fechanacimiento'] = date("d/m/Y", strtotime($contenidocorreo['fechanacimiento']));
+
+                $contenido =
+                "Género: ".$contenidocorreo['genero'].
+                "<br>Nombre y apellidos: ".$contenidocorreo['nombre']." ".$contenidocorreo['apellidos'].
+                "<br>Fecha de nacimiento: ".$contenidocorreo['fechanacimiento'].
+                "<br>DNI: ".$contenidocorreo['dni'].
+                "<br>Semanas seleccionadas: ".$semanas.
+                "<br>Días sueltos: ".$contenidocorreo['diassueltos'].
+                "<br>Importe: ".$contenidocorreo['importe']."€".
+                "<br>Pago: ".$contenidocorreo['tipopago'].
+                "<br>Club: ".$contenidocorreo['club'].
+                "<br>Observaciones: ".$contenidocorreo['tratamientosmedicos'].
+                "<br>Nombre y apellidos tutor/a: ".$contenidocorreo['nombretutor']." ".$contenidocorreo['apellidostutor'].
+                "<br>Teléfono del tutor/a: ".$contenidocorreo['telefonotutor'].
+                "<br>Correo electrónico: ".$contenidocorreo['emailtutor'];
+
+
+                // Creamos todo el cuerpo del PDF en HTML
+                $body = '
+                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                    <html xmlns="https://www.w3.org/1999/xhtml">
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                            <title>L´Alqueria del Basket</title>
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        </head>
+                        <body style="margin: 0; padding: 0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td>
+                                        <![endif]-->
+
+                                        <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                                            <tr>
+                                                <td align="center" bgcolor="#000000" style="padding: 15px 0 15px 0;">
+                                                    <a href="https://servicios.alqueriadelbasket.com" target="_blank">
+                                                        <img src="https://servicios.alqueriadelbasket.com/img/logos-cabecera-email.png" alt="Alqueria del Basket" width="547" height="81" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td bgcolor="#ffffff" style="padding: 30px 25px 30px 25px;">
+                                                    <h3 style="color: #eb7c00; border-bottom: #eb7c00 2px solid;">'.$seccioninscripcion.'</h3>
+                                                    <p><strong>Estos son los datos recibidos relacionados con su inscripción.</strong></p>
+                                                    <p><strong>Número de pedido:</strong> '.$numero.'</p>
+                                                    <p>'.$contenido.'</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td bgcolor="#424241" style="padding: 20px 30px 20px 30px">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td width="75%" style="font-family: Arial, sans-serif; line-height: 18px; font-size: 12px;">
+                                                                <span style="color: #eb7c00;">&copy; L´Alqueria del Basket 2020</span><br>
+                                                                <span style="color: #ffffff;">C/ Bomber Ramon Duart S/N 46013, València</span><br>
+                                                                <span style="color: #ffffff;">+34 96 121 55 43</span>
+                                                            </td>
+                                                            <td width="25%" align="right">
+                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://www.facebook.com/LAlqueriaVBC" target="_blank">
+                                                                                <img src="https://servicios.alqueriadelbasket.com/img/logo-facebook.png" alt="Facebook L´Alqueria del VBC" width="32" height="32" style="display: block;" border="0">
+                                                                            </a>
+                                                                        </td>
+                                                                        <td style="font-size: 0; line-height: 0;" width="10%">&nbsp;</td>
+                                                                        <td>
+                                                                            <a href="https://twitter.com/LAlqueriaVBC" target="_blank">
+                                                                                <img src="https://servicios.alqueriadelbasket.com/img/logo-twitter.png" alt="Twitter L´Alqueria del VBC" width="32" height="32" style="display: block;" border="0">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </body>
+                    </html>';
+
+                echo "<pre>";
+                echo $body;
+                echo "</pre>";
+            }
+            else {
+                require('error.php');
+            }
+        }
+
+
+
+        public function actionMostrarModalEscuelaVeranoAlq() 
+        {
+            //error_log(__FILE__.__LINE__);
+               // error_log(print_r($_POST,1));
+                
+                $idinscripcion = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+
+                error_log("inscrpcion escuela verano: ".$idinscripcion);
+
+                if(!empty($idinscripcion))
+                {
+                    require "models/escuela_verano.php";
+                    require "includes/Utils.php";
+
+                    $datos  =   escuela_verano::damedatosescuelaveranobyid($idinscripcion);
+                    
+                    // error_log(__FILE__.__LINE__);
+                  
+                     // error_log(print_r($datos,1));
+                    $alerta_cuenta="";
+       
+                    echo json_encode(array(
+                        "response"      =>  "success",
+                        "instancia"     =>  $datos,
+                        "modal_title"   =>  "Formulario de inscripción en Escuela Verano Alq",
+                        "message"       =>  "Los datos de la inscripción se han cargado correctamente.",
+                        "alerta_cuenta" =>  $alerta_cuenta));
+                    die;
+                } 
+                else
+                {
+                    echo json_encode(array(
+                        "response"      => "error",
+                        "instancia"         => "",
+                        "modal_title"   => "Error",
+                        "message"       => "Parece que ha habido algún error"));
+                }
+               
+
+        }
+
+        public function actionUpdateInscripcionModalEscuelaVeranoAlq()
+        {
+            require "models/escuela_verano.php";
+
+          // error_log("entra en update escuela verano ALQ: ");
+            $idinscripcion = filter_input(INPUT_POST, 'idinscripcion', FILTER_SANITIZE_NUMBER_INT);
+
+           //  error_log("entra en update escuela verano ALQ: ".$idinscripcion);
+
+            $dnijugador =filter_input(INPUT_POST, 'dnijugador', FILTER_SANITIZE_STRING);
+            $nombre =filter_input(INPUT_POST, 'nombre', FILTER_SANITIZE_STRING);
+            $apellidos =filter_input(INPUT_POST, 'apellidos', FILTER_SANITIZE_STRING);
+            //$date = new DateTime($_POST["fechanac"]);
+            $fechanac=filter_input(INPUT_POST, 'fechanac', FILTER_SANITIZE_STRING);
+            $club =filter_input(INPUT_POST, 'club', FILTER_SANITIZE_STRING);
+          //  $talla =filter_input(INPUT_POST, 'talla', FILTER_SANITIZE_STRING);
+
+            $direccion = filter_input(INPUT_POST, 'direccion', FILTER_SANITIZE_STRING);
+            $numero = filter_input(INPUT_POST, 'numero', FILTER_SANITIZE_STRING);
+            $piso = filter_input(INPUT_POST, 'piso', FILTER_SANITIZE_STRING);
+            $puerta =  filter_input(INPUT_POST, 'puerta', FILTER_SANITIZE_STRING);
+            $poblacion =  filter_input(INPUT_POST, 'poblacion', FILTER_SANITIZE_STRING);
+            $cp =  filter_input(INPUT_POST, 'cp', FILTER_SANITIZE_STRING);
+            $prov =  filter_input(INPUT_POST, 'prov', FILTER_SANITIZE_STRING);
+
+            
+            $nombretutor = filter_input(INPUT_POST, 'nombretutor', FILTER_SANITIZE_STRING);
+            $apeltutor = filter_input(INPUT_POST, 'apeltutor', FILTER_SANITIZE_STRING);
+            $dnitutor =  filter_input(INPUT_POST, 'dnitutor', FILTER_SANITIZE_STRING);
+            $tlftutor =  filter_input(INPUT_POST, 'tlftutor', FILTER_SANITIZE_STRING);
+            $email =  filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+
+         
+            $tratam =  filter_input(INPUT_POST, 'tratam', FILTER_SANITIZE_STRING);
+
+            $sip_que_habia  =   filter_input(INPUT_POST, 'sipanterior', FILTER_SANITIZE_STRING);
+
+            /***********************
+            *    FICHERO SIP
+            **********************/
+            if(!empty($_FILES['sipnuevo']['tmp_name']))
+            {
+                $array_fichero_y_extension  =   explode(".",$_FILES["sipnuevo"]["name"]);
+                $numerodeelementos          =   count($array_fichero_y_extension);
+                $extension                  =   $array_fichero_y_extension[$numerodeelementos-1];
+                $sip                        =   'img/sipescuelaverano/'.strtolower(self::sanitize_nombre_para_columna_myslq($_POST['nombre']))."-".strtolower(self::sanitize_nombre_para_columna_myslq($_POST['apellidos']))."-".date("d-m-Y-H-i-s").".".$extension;
+                $archivo_movido             =   move_uploaded_file($_FILES["sipnuevo"]["tmp_name"], $sip);
+            }
+            else
+            {   
+                $sip   =   $sip_que_habia;
+            }
+
+//error_log(__FILE__.__FUNCTION__.__LINE__);
+           
+            // error_log("sip: ".$sip );
+
+
+           
+
+            $turno2 =  filter_input(INPUT_POST, 'turno2', FILTER_SANITIZE_STRING);
+            $tipo2 =  filter_input(INPUT_POST, 'tipo2', FILTER_SANITIZE_STRING);
+            $semana2="";
+            if ($turno2 =='true'){
+                if ($tipo2 =='manyanas'){
+                    $semana2="sem2_manyana";
+                }else if($tipo2 =='completo'){
+                    $semana2="sem2_comp";
+                }
+
+            } else{$semana2="";};
+           // error_log("turno2: ".$turno2 ." t2: " .$tipo2 . " s2: ".$semana2);
+
+
+            $turno3 =  filter_input(INPUT_POST, 'turno3', FILTER_SANITIZE_STRING);
+            $tipo3 =  filter_input(INPUT_POST, 'tipo3', FILTER_SANITIZE_STRING);
+            $semana3="";
+            if ($turno3 =='true'){
+                if ($tipo3 =='manyanas'){
+                    $semana3="sem3_manyana";
+                }else if($tipo3 =='completo'){
+                    $semana3="sem3_comp";
+                }
+
+            } else{$semana3="";};
+           // error_log("turno3: ".$turno3 ." t3: " .$tipo3 . " s3: ".$semana3);
+
+
+            $turno4 =  filter_input(INPUT_POST, 'turno4', FILTER_SANITIZE_STRING);
+            $tipo4 =  filter_input(INPUT_POST, 'tipo4', FILTER_SANITIZE_STRING);
+            $semana4="";
+            if ($turno4 =='true'){
+                if ($tipo4 =='manyanas'){
+                    $semana4="sem4_manyana";
+                }else if($tipo4 =='completo'){
+                    $semana4="sem4_comp";
+                }
+
+            } else{$semana4="";};
+          //  error_log("turno4: ".$turno4 ." t4: " .$tipo4 . " s4: ".$semana4);
+
+
+            $turno5 =  filter_input(INPUT_POST, 'turno5', FILTER_SANITIZE_STRING);
+            $tipo5 =  filter_input(INPUT_POST, 'tipo5', FILTER_SANITIZE_STRING);
+            $semana5="";
+            if ($turno5 =='true'){
+                if ($tipo5 =='manyanas'){
+                    $semana5="sem5_manyana";
+                }else if($tipo5 =='completo'){
+                    $semana5="sem5_comp";
+                }
+
+            } else{$semana5="";};
+           // error_log("turno5: ".$turno5 ." t5: " .$tipo5 . " s5: ".$semana5);
+
+
+            $turno6 =  filter_input(INPUT_POST, 'turno6', FILTER_SANITIZE_STRING);
+            $tipo6 =  filter_input(INPUT_POST, 'tipo6', FILTER_SANITIZE_STRING);
+            $semana6="";
+            $semana6="";
+            if ($turno6 =='true'){
+                if ($tipo6 =='manyanas'){
+                    $semana6="sem6_manyana";
+                }else if($tipo6 =='completo'){
+                    $semana6="sem6_comp";
+                }
+
+            } else{$semana6="";};
+            error_log("turno6: ".$turno6 ." t6: " .$tipo6 . " s6: ".$semana6);
+      
+
+            if (isset($idinscripcion) && !empty($idinscripcion)) {
+                       
+                $instancia=escuela_verano::updatefichaescuelaverano($idinscripcion,$dnijugador,$nombre,$apellidos,$fechanac, $club,  $direccion, $numero, $piso, $puerta, $poblacion, $cp, $prov, $nombretutor, $apeltutor, $dnitutor, $tlftutor, $email,  $tratam,  $semana2, $semana3, $semana4, $semana5, $semana6, $sip);
+
+                echo json_encode(array("response" => "success",
+                    "datos" => $instancia,
+                    "modal_title" => "Formulario de inscripción",
+                    "message" => "Los datos de la inscripción se han modificado correctamente."));
+            } 
+            else {
+                echo json_encode(array(
+                    "response" => "error",
+                    "datos" => "",
+                    "modal_title" => "Error",
+                    "message" => "Parece que ha habido algún error"));
+            }
+            die;
+        }
+
+
+
+        /* ESCUELA DE VERANO DE VALENCIA BASKET QUE ESTA EN EL .110.121 */
+
+        public function actionImprimirFichaEscuelaVeranoVB() {
+
+            // Comprobamos que el usuario tiene algún rol de administrador para continuar...
+            if (isset($_SESSION['usuario']) && ($_SESSION['rolusuario'] == "admin" || $_SESSION['rolusuario'] == "superadmin")) {
+                require "models/escuela_verano.php";
+
+                // Recogemos la variable "tipopago" de la URL para incluirla en el cuerpo del HTML
+                $tipopago = $_GET['tipopago'];
+
+                // Dependiendo del tipo de pago, asignamos un título al cuerpo del HTML
+                if ($tipopago == "OFICINA") {
+                    $seccioninscripcion = "Ficha inscripción pago oficina Escuela Verano Valencia Basket";
+                }
+                elseif ($tipopago == "ONLINE") {
+                    $seccioninscripcion = "Ficha inscripción pago online Escuela Verano Valencia Basket";
+                }
+
+
+                // Recogemos la variable "numeropedido" de la URL para pasársela al modelo e incluirla en el cuerpo del HTML
+                $numero = $_GET['numeropedido'];
+
+                // Recogemos todos los datos del registro pasándole el número de pedido
+                $contenidocorreo = escuela_verano::damedatosescuelaveranoVB($numero);
+
+
+                $semanas = "";
+
+                if ($contenidocorreo['semana1'] == "sem1_comp") {
+                    $semanas = "-Semana del 29 de Junio al 3 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana1'] == "sem1_manyana") {
+                    $semanas = "-Semana del 29 de Junio al 3 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana2'] == "sem2_comp") {
+                    $semanas = $semanas." -Semana del 6 al 10 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana2'] == "sem2_manyana") {
+                    $semanas = $semanas." -Semana del 6 al 10 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana3'] == "sem3_comp") {
+                    $semanas = $semanas." -Semana del 13 al 17 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana3'] == "sem3_manyana") {
+                    $semanas = $semanas." -Semana del 13 al 17 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana4'] == "sem4_comp") {
+                    $semanas = $semanas." -Semana del 20 al 24 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana4'] == "sem4_manyana") {
+                    $semanas = $semanas." -Semana del 20 al 24 de Julio solo mañanas";
+                }
+
+                if ($contenidocorreo['semana5'] == "sem5_comp") {
+                    $semanas = $semanas." -Semana del 27 al 31 de Julio día completo";
+                }
+                elseif ($contenidocorreo['semana5'] == "sem5_manyana") {
+                    $semanas = $semanas." -Semana del 27 al 31 de Julio solo mañanas";
+                }
+
+                $contenidocorreo['fechanacimiento'] = date("d/m/Y", strtotime($contenidocorreo['fechanacimiento']));
+
+                $contenido =
+                "Género: ".$contenidocorreo['genero'].
+                "<br>Nombre y apellidos: ".$contenidocorreo['nombre']." ".$contenidocorreo['apellidos'].
+                "<br>Fecha de nacimiento: " .$contenidocorreo['fechanacimiento'].
+                "<br>DNI: ".$contenidocorreo['dni'].
+                "<br>Semanas seleccionadas: ".$semanas.
+                "<br>Días sueltos: ".$contenidocorreo['diassueltos'].
+                "<br>Importe: ".$contenidocorreo['importe']."€".
+                "<br>Pago: ".$contenidocorreo['tipo_pago'].
+                "<br>Club: ".$contenidocorreo['club'].
+                "<br>Observaciones: ".$contenidocorreo['enfermedad'].
+                "<br>Nombre y apellidos tutor/a: ".$contenidocorreo['nombretutor']." ".$contenidocorreo['apellidostutor'].
+                "<br>Teléfono del tutor/a: ".$contenidocorreo['telefonotutor'].
+                "<br>Correo electrónico: ".$contenidocorreo['emailtutor'];
+
+
+                // Creamos todo el cuerpo del PDF en HTML
+                $body = '
+                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                    <html xmlns="https://www.w3.org/1999/xhtml">
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                            <title>L´Alqueria del Basket</title>
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        </head>
+                        <body style="margin: 0; padding: 0;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0;">
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td>
+                                        <![endif]-->
+
+                                        <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+                                            <tr>
+                                                <td align="center" bgcolor="#000000" style="padding: 15px 0 15px 0;">
+                                                    <a href="https://servicios.alqueriadelbasket.com" target="_blank">
+                                                        <img src="https://servicios.alqueriadelbasket.com/img/logos-cabecera-email.png" alt="Alqueria del Basket" width="547" height="81" style="display: block;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td bgcolor="#ffffff" style="padding: 30px 25px 30px 25px;">
+                                                    <h3 style="color: #eb7c00; border-bottom: #eb7c00 2px solid;">'.$seccioninscripcion.'</h3>
+                                                    <p><strong>Estos son los datos recibidos relacionados con su inscripción.</strong></p>
+                                                    <p><strong>Número de pedido:</strong> '.$numero.'</p>
+                                                    <p>'.$contenido.'</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td bgcolor="#424241" style="padding: 20px 30px 20px 30px">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td width="75%" style="font-family: Arial, sans-serif; line-height: 18px; font-size: 12px;">
+                                                                <span style="color: #eb7c00;">&copy; L´Alqueria del Basket 2020</span><br>
+                                                                <span style="color: #ffffff;">C/ Bomber Ramon Duart S/N 46013, València</span><br>
+                                                                <span style="color: #ffffff;">+34 96 121 55 43</span>
+                                                            </td>
+                                                            <td width="25%" align="right">
+                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="https://www.facebook.com/LAlqueriaVBC" target="_blank">
+                                                                                <img src="https://servicios.alqueriadelbasket.com/img/logo-facebook.png" alt="Facebook L´Alqueria del VBC" width="32" height="32" style="display: block;" border="0">
+                                                                            </a>
+                                                                        </td>
+                                                                        <td style="font-size: 0; line-height: 0;" width="10%">&nbsp;</td>
+                                                                        <td>
+                                                                            <a href="https://twitter.com/LAlqueriaVBC" target="_blank">
+                                                                                <img src="https://servicios.alqueriadelbasket.com/img/logo-twitter.png" alt="Twitter L´Alqueria del VBC" width="32" height="32" style="display: block;" border="0">
+                                                                            </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                            </table>
+                        </body>
+                    </html>';
+
+                echo "<pre>";
+                echo $body;
+                echo "</pre>";
+            }
+            else {
+                require('error.php');
+            }
+        }
+
+
+         public function actionMostrarModalEscuelaVeranoVB() 
+        {
+            //error_log(__FILE__.__LINE__);
+               // error_log(print_r($_POST,1));
+                
+                $idinscripcion = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
+
+                error_log("inscrpcion escuela verano VB: ".$idinscripcion);
+
+                if(!empty($idinscripcion))
+                {
+                    require "models/escuela_verano.php";
+                    require "includes/Utils.php";
+
+                    $datos  =   escuela_verano::damedatosBYIDescuelaveranoVB($idinscripcion);
+                    
+                    // error_log(__FILE__.__LINE__);
+                  
+                     // error_log(print_r($datos,1));
+                    $alerta_cuenta="";
+       
+                    echo json_encode(array(
+                        "response"      =>  "success",
+                        "instancia"     =>  $datos,
+                        "modal_title"   =>  "Formulario de inscripción en Escuela Verano Alq",
+                        "message"       =>  "Los datos de la inscripción se han cargado correctamente.",
+                        "alerta_cuenta" =>  $alerta_cuenta));
+                    die;
+                } 
+                else
+                {
+                    echo json_encode(array(
+                        "response"      => "error",
+                        "instancia"         => "",
+                        "modal_title"   => "Error",
+                        "message"       => "Parece que ha habido algún error"));
+                }
+               
+
+        }
+
+        public function actionUpdateInscripcionModalEscuelaVeranoVB()
+        {
+            require "models/escuela_verano.php";
+
+            
+            $idinscripcion = filter_input(INPUT_POST, 'idinscripcion', FILTER_SANITIZE_NUMBER_INT);
+
+           // error_log("entra en update escuela verano VB: ".$idinscripcion);
+
+            $dnijugador =filter_input(INPUT_POST, 'dnijugador', FILTER_SANITIZE_STRING);
+            $nombre =filter_input(INPUT_POST, 'nombre', FILTER_SANITIZE_STRING);
+            $apellidos =filter_input(INPUT_POST, 'apellidos', FILTER_SANITIZE_STRING);
+            //$date = new DateTime($_POST["fechanac"]);
+            $fechanac=filter_input(INPUT_POST, 'fechanac', FILTER_SANITIZE_STRING);
+            $club =filter_input(INPUT_POST, 'club', FILTER_SANITIZE_STRING);
+            $talla =filter_input(INPUT_POST, 'talla', FILTER_SANITIZE_STRING);
+
+            $direccion = filter_input(INPUT_POST, 'direccion', FILTER_SANITIZE_STRING);
+            $numero = filter_input(INPUT_POST, 'numero', FILTER_SANITIZE_STRING);
+            $piso = filter_input(INPUT_POST, 'piso', FILTER_SANITIZE_STRING);
+            $puerta =  filter_input(INPUT_POST, 'puerta', FILTER_SANITIZE_STRING);
+            $poblacion =  filter_input(INPUT_POST, 'poblacion', FILTER_SANITIZE_STRING);
+            $cp =  filter_input(INPUT_POST, 'cp', FILTER_SANITIZE_STRING);
+            $prov =  filter_input(INPUT_POST, 'prov', FILTER_SANITIZE_STRING);
+
+            
+            $nombretutor = filter_input(INPUT_POST, 'nombretutor', FILTER_SANITIZE_STRING);
+            $apeltutor = filter_input(INPUT_POST, 'apeltutor', FILTER_SANITIZE_STRING);
+            $dnitutor =  filter_input(INPUT_POST, 'dnitutor', FILTER_SANITIZE_STRING);
+            $tlftutor =  filter_input(INPUT_POST, 'tlftutor', FILTER_SANITIZE_STRING);
+            $email =  filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
+
+         
+            $tratam =  filter_input(INPUT_POST, 'tratam', FILTER_SANITIZE_STRING);
+
+            $sip_que_habia  =   filter_input(INPUT_POST, 'sipanterior', FILTER_SANITIZE_STRING);
+
+            /***********************
+            *    FICHERO SIP
+            **********************/
+            if(!empty($_FILES['sipnuevo']['tmp_name']))
+            {
+                $array_fichero_y_extension  =   explode(".",$_FILES["sipnuevo"]["name"]);
+                $numerodeelementos          =   count($array_fichero_y_extension);
+                $extension                  =   $array_fichero_y_extension[$numerodeelementos-1];
+                $sip                        =   'img/sipescuelaverano_vb/'.strtolower(self::sanitize_nombre_para_columna_myslq($_POST['nombre']))."-".strtolower(self::sanitize_nombre_para_columna_myslq($_POST['apellidos']))."-".date("d-m-Y-H-i-s").".".$extension;
+                $archivo_movido             =   move_uploaded_file($_FILES["sipnuevo"]["tmp_name"], $sip);
+            }
+            else
+            {   
+                $sip   =   $sip_que_habia;
+            }
+           
+
+            $turno2 =  filter_input(INPUT_POST, 'turno2', FILTER_SANITIZE_STRING);
+            $tipo2 =  filter_input(INPUT_POST, 'tipo2', FILTER_SANITIZE_STRING);
+            $semana2="";
+            if ($turno2 =='true'){
+                if ($tipo2 =='manyanas'){
+                    $semana2="sem1_manyana";
+                }else if($tipo2 =='completo'){
+                    $semana2="sem1_comp";
+                }
+
+            } else{$semana2="";};
+            //error_log("turno2: ".$turno2 ." t2: " .$tipo2 . " s2: ".$semana2);
+
+
+            $turno3 =  filter_input(INPUT_POST, 'turno3', FILTER_SANITIZE_STRING);
+            $tipo3 =  filter_input(INPUT_POST, 'tipo3', FILTER_SANITIZE_STRING);
+            $semana3="";
+            if ($turno3 =='true'){
+                if ($tipo3 =='manyanas'){
+                    $semana3="sem2_manyana";
+                }else if($tipo3 =='completo'){
+                    $semana3="sem2_comp";
+                }
+
+            } else{$semana3="";};
+           // error_log("turno3: ".$turno3 ." t3: " .$tipo3 . " s3: ".$semana3);
+
+
+            $turno4 =  filter_input(INPUT_POST, 'turno4', FILTER_SANITIZE_STRING);
+            $tipo4 =  filter_input(INPUT_POST, 'tipo4', FILTER_SANITIZE_STRING);
+            $semana4="";
+            if ($turno4 =='true'){
+                if ($tipo4 =='manyanas'){
+                    $semana4="sem3_manyana";
+                }else if($tipo4 =='completo'){
+                    $semana4="sem3_comp";
+                }
+
+            } else{$semana4="";};
+           // error_log("turno4: ".$turno4 ." t4: " .$tipo4 . " s4: ".$semana4);
+
+
+            $turno5 =  filter_input(INPUT_POST, 'turno5', FILTER_SANITIZE_STRING);
+            $tipo5 =  filter_input(INPUT_POST, 'tipo5', FILTER_SANITIZE_STRING);
+            $semana5="";
+            if ($turno5 =='true'){
+                if ($tipo5 =='manyanas'){
+                    $semana5="sem4_manyana";
+                }else if($tipo5 =='completo'){
+                    $semana5="sem4_comp";
+                }
+
+            } else{$semana5="";};
+          //  error_log("turno5: ".$turno5 ." t5: " .$tipo5 . " s5: ".$semana5);
+
+
+            $turno6 =  filter_input(INPUT_POST, 'turno6', FILTER_SANITIZE_STRING);
+            $tipo6 =  filter_input(INPUT_POST, 'tipo6', FILTER_SANITIZE_STRING);
+            $semana6="";
+            $semana6="";
+            if ($turno6 =='true'){
+                if ($tipo6 =='manyanas'){
+                    $semana6="sem5_manyana";
+                }else if($tipo6 =='completo'){
+                    $semana6="sem5_comp";
+                }
+
+            } else{$semana6="";};
+           // error_log("turno6: ".$turno6 ." t6: " .$tipo6 . " s6: ".$semana6);
+      
+
+            if (isset($idinscripcion) && !empty($idinscripcion)) {
+                       
+                $instancia=escuela_verano::updatefichaescuelaveranovb($idinscripcion,$dnijugador,$nombre,$apellidos,$fechanac, $club,  $direccion, $numero, $piso, $puerta, $poblacion, $cp, $prov, $nombretutor, $apeltutor, $dnitutor, $tlftutor, $email,  $tratam,  $semana2, $semana3, $semana4, $semana5, $semana6, $sip);
+
+                echo json_encode(array("response" => "success",
+                    "datos" => $instancia,
+                    "modal_title" => "Formulario de inscripción",
+                    "message" => "Los datos de la inscripción se han modificado correctamente."));
+            } 
+            else {
+                echo json_encode(array(
+                    "response" => "error",
+                    "datos" => "",
+                    "modal_title" => "Error",
+                    "message" => "Parece que ha habido algún error"));
+            }
+            die;
+        }
+
+
+
+
+
+
+        private static function sanitize_nombre_para_columna_myslq($string)
+        {
+            $unwanted_array = array(
+                ' '=>'_', '.'=>'_', '-'=>'_', '>'=>'_', '/'=>'_', ':'=>'_', '?'=>'_', '!'=>'_',
+                'Š'=>'S', 'š'=>'s', 'Ž'=>'Z', 'ž'=>'z', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
+                'Ê'=>'E', 'Ë'=>'E', 'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'NY', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O', 'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U',
+                'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y', 'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c',
+                'è'=>'e', 'é'=>'e', 'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'ny', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
+                'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ü'=>'u', 'ý'=>'y', 'þ'=>'b', 'ÿ'=>'y' );
+
+            $str    =   strtr( $string, $unwanted_array );
+
+            $regex  =   '/[a-zA-Z_0-9]/';
+
+            if(preg_match($regex, $str))
+            {
+                return $str;
+            }
+            else{
+                error_log(__FILE__.__LINE__);
+                error_log("El string: ".$string." ha generado un error en sanitize_nombre_para_columna_myslq()");
+                return false;
+            }
+        }
+    }
+?>

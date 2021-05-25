@@ -1,0 +1,402 @@
+<?php
+	class escuela_pascua {
+
+		public static function findDatosEscuelaFPascuaById($id) {
+			
+			return db_utf8::singleton()->query('SELECT * FROM registros_escuela_pascua WHERE id=' . $id)->fetch();
+		}
+
+		public static function damedatosescuelapascua($numero) {
+			//error_log('SELECT * FROM registros_escuela_pascua WHERE numeropedido=' . '"'.$numero.'"');
+			return db_utf8::singleton()->query('SELECT * FROM registros_escuela_pascua WHERE numeropedido=' . '"'.$numero.'"')->fetch();
+		}
+
+
+		//Para contar los registros de cada opcion (mañana, dia completo o dias sueltos) y mostrarlos en el back
+		public static function findInscripcionesPascuaByOpcion($filtro)
+        {
+			//error_log(print_r('SELECT count(*) as total FROM registros_escuela_fallas WHERE opcion ='.'"'.$filtro.'"',1));
+			return db_utf8::singleton()->query('SELECT count(*) as total FROM registros_escuela_pascua WHERE eliminado=0 and  fecharegistro>"2021-02-01" and opcion ='.'"'.$filtro.'"')->fetch();
+		}
+
+
+
+		//sacamos las inscripciones activas de la temporada correspondiente por fecha actual
+		public static function findInscripcionesPascuaActivas()	{			
+			$query = db_utf8::singleton()->query('SELECT * FROM registros_escuela_pascua WHERE eliminado=0 AND fecharegistro>"2021-02-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll();
+			}
+			else {
+				return false;
+			}
+		}
+
+
+
+		// Para la consulta de exportar a excel
+		public static function findAllInscripcionesExcelEscuelaPascua()	{			
+			/*$query = db_utf8::singleton()->query('SELECT fecharegistro, numeropedido,  
+				convert(cast(convert(opcion using latin1) AS binary) using utf8) AS opcion, 
+				concat (convert(cast(convert(nombre using latin1) AS binary) using utf8), " ", convert(cast(convert(apellidos using latin1) AS binary) using utf8)) AS Inscrito, 
+				dni, fechanacimiento, turno1, turno2, turno3, turno4, 
+				convert(cast(convert(club using latin1) AS binary) using utf8) AS club, 
+				convert(cast(convert(observaciones using latin1) AS binary) using utf8) AS observaciones, telefonotutor, 
+				concat (convert(cast(convert(nombretutor using latin1) AS binary) using utf8) , " ", convert(cast(convert(apellidostutor using latin1) AS binary) using utf8) )AS Tutor, 
+				emailtutor, dnitutor, direccion, numero, piso, puerta, cp, 
+				convert(cast(convert(provincia using latin1) AS binary) using utf8) AS provincia, 
+				convert(cast(convert(poblacion using latin1) AS binary) using utf8) AS poblacion
+				autorizodatos, autorizoimagen, if(pagado=1, "Si", "No") AS pagado, tipo_pago, importe, sintomascovid, familiarcovid FROM registros_escuela_pascua WHERE eliminado = 0 AND fecharegistro > "2021-02-01" ORDER BY numeropedido DESC');*/
+/*error_log('SELECT fecharegistro, numeropedido, opcion,  turno1, turno2, turno3, turno4,  genero, 
+				concat (nombre, " ", apellidos) AS Inscrito, fechanacimiento, dni, club,   observaciones AS ObserMedicas,   
+				concat (nombretutor, " ", apellidostutor) AS Tutor, telefonotutor, emailtutor, dnitutor, direccion AS Direccion, numero, piso, puerta, cp, provincia Provincia, poblacion AS Poblacion, autorizodatos, autorizoimagen, tipo_pago, if(pagado=1, "Si", "No") AS Pagado, importe, sintomascovid, familiarcovid FROM registros_escuela_fallas WHERE eliminado=0 and fecharegistro>"2021-02-01" ORDER BY numeropedido DESC');*/
+			$query = db_utf8::singleton()->query('SELECT fecharegistro, numeropedido, opcion,  turno1 as Dia1, turno2 as Dia2, turno3 as Dia3, turno4 as Dia4,  genero, 
+				concat (nombre, " ", apellidos) AS Inscrito, fechanacimiento, dni, club,   observaciones AS ObserMedicas,   
+				concat (nombretutor, " ", apellidostutor) AS Tutor, telefonotutor, emailtutor, dnitutor, direccion AS Direccion, numero, piso, puerta, cp, provincia as Provincia, poblacion AS Poblacion, autorizodatos, autorizoimagen, tipo_pago, if(pagado=1, "Si", "No") AS Pagado, importe, sintomascovid, familiarcovid FROM registros_escuela_pascua WHERE eliminado=0 and fecharegistro>"2021-02-01" ORDER BY numeropedido DESC');
+
+			if ($query) {
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		// Para la consulta de exportar a excel
+		public static function findAllInscripcionesExcelEscuelaPascuaConCampos($where, $campoorder, $campos)	{
+
+			$query = db_utf8::singleton()->query('SELECT fecharegistro, numeropedido as Pedido, opcion as Opcion, turno1 as Dia1, turno2 as Dia2, turno3 as Dia3, turno4 as Dia4, genero as Genero, concat (nombre, " ", apellidos) AS Inscrito, fechanacimiento,  '. $campos .'    concat (nombretutor, " ", apellidostutor) AS Tutor, telefonotutor as Telefono, emailtutor As Email,  if(pagado=1, "Si", "No") AS Pagado, importe as Importe, tipo_pago as TipoPago FROM registros_escuela_pascua WHERE eliminado=0 and fecharegistro>"2021-02-01"'. $where .'ORDER BY '. $campoorder .' DESC');
+
+			
+			if ($query) {
+				return $query->fetchAll(PDO::FETCH_ASSOC);
+			}
+			else {
+				return false;
+			}
+		}
+
+
+
+		public static function actualizapagadoescuelapascuatpv($codigo, $pagado) {
+			$sql = "UPDATE registros_escuela_pascua SET pagado=:pag  WHERE numeropedido=:numero";
+			$query = db::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $codigo, ':pag' => $pagado);
+
+			if (!$query->execute($datos)) {
+				return false;
+			} 
+			else {
+				return true;
+			}
+		}
+
+		//correcto
+		public static function ActualizaPagadoEscuelaPascua($id, $pagado) {
+			$sql = "UPDATE  registros_escuela_pascua SET pagado=:pag WHERE id=:numero";
+
+			$query = db::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $id, ':pag' => $pagado);
+
+			if (!$query->execute($datos)) {
+				return false;
+			}
+			else {
+				echo "<script text='javascript'>
+						alert('El pago se grabo correctamente');
+						window.location.replace('?r=escuelapascua/BackEscuelaPascua');
+					</script>";
+				die;
+			}
+		}
+
+
+
+
+
+		public static function actualizacodigoerror($pedido, $codigo_error) {
+			$sql = "UPDATE registros_escuela_pascua SET errorcode=:error  WHERE numeropedido=:numero";
+			$query = db::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $pedido, ':error' => $codigo_error);
+
+			if (!$query->execute($datos)) {
+				return false;
+			} 
+			else {
+				return true;
+			}
+		}
+
+
+		public static function DardeBajaEscuelaPascua($pedido) {
+			$sql = "UPDATE registros_escuela_pascua SET eliminado = 1 WHERE numeropedido = :numero";
+			$query = db::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':numero' => $pedido);
+
+			if (!$query->execute($datos)) {
+				return false;
+			}
+			else {
+				echo "<script text='javascript'>
+						alert('El registro se eliminó correctamente.');
+						window.location.replace('?r=escuelapascua/BackEscuelaPascua');
+					</script>";
+				die;
+			}
+		}
+
+
+		public static function comprobarRepetidos() {
+			return db::singleton()->query('SELECT * FROM registros_escuela_pascua where fecharegistro>"2021-01-01"')->fetchAll();
+		}
+
+
+		public static function findLastNumeroPedidoEscuelaPascua() {
+			return db::singleton()->query('SELECT MAX(id) FROM registros_escuela_pascua')->fetch();
+		}
+
+
+		public static function newFormEscuelaPascua($fecharegistro,$opcion,$nombre,$apellidos,$fechanacimiento,$dni,$club,$observaciones,$fotocopiasipsubida,$nombretutor,$apellidostutor,$dnitutor,$direccion,$numero,$piso,$puerta,$cp,$provincia,$poblacion,$telefonotutor,$emailtutor,$autorizodatos,$autorizoimagen,$numeropedido,$importe,$dia1,$dia2,$dia3,$dia4,$tipopago, $sintomasc, $familiarc, $genero, $pagado, $ficherosubido2) {
+
+			$sql = "INSERT INTO registros_escuela_pascua(fecharegistro,opcion,nombre,apellidos,fechanacimiento,dni,club,observaciones,fotocopiasip,nombretutor,apellidostutor,dnitutor,direccion,numero,piso,puerta,cp,provincia,poblacion,telefonotutor,emailtutor,autorizodatos,autorizoimagen,pagado,numeropedido,importe,evento, turno1, turno2, turno3, turno4, tipo_pago, sintomascovid, familiarcovid, genero, resguardopago)
+			VALUES (:fecharegistro, :opcion, :nombre, :apellidos,:fechanacimiento,:dni,:club,:observaciones,:fotocopiasipsubida, :nombretutor,:apellidostutor,:dnitutor,:direccion,:numero,:piso,:puerta,:cp,:provincia,:poblacion,:telefonotutor, :emailtutor, :autorizodatos, :autorizoimagen, :pagado, :numeropedido, :importe, :evento, :t1,:t2,:t3,:t4, :tipopag, :sint, :famili, :gen, :resg)";
+		   
+			$query = db_utf8::singleton()->prepare($sql);
+			
+			if (!$query) {
+				var_dump(db::singleton()->errorInfo());
+				die;
+			}
+
+			$datos = array(':fecharegistro' => $fecharegistro, ':opcion' => $opcion, ':nombre' => $nombre, ':apellidos' => $apellidos,':fechanacimiento' => $fechanacimiento,':dni' => $dni,':club' => $club,  ':observaciones' => $observaciones, ':fotocopiasipsubida' => $fotocopiasipsubida, ':nombretutor' => $nombretutor, ':apellidostutor' => $apellidostutor, ':dnitutor' => $dnitutor, ':direccion' => $direccion, ':numero' => $numero,':piso' => $piso, ':puerta' => $puerta, ':cp' => $cp, ':provincia' => $provincia, ':poblacion' => $poblacion, ':telefonotutor' => $telefonotutor, ':emailtutor' => $emailtutor,  ':autorizodatos' => $autorizodatos, ':autorizoimagen' => $autorizoimagen, ':pagado' => $pagado, ':numeropedido' => $numeropedido, ':importe' => $importe, ':evento' => "Pascua 2021", ':t1' => $dia1, ':t2' => $dia2,':t3' => $dia3,':t4' => $dia4,':tipopag' => $tipopago, ':sint' => $sintomasc, ':famili' => $familiarc, ':gen' => $genero, ':resg' => $ficherosubido2);
+
+			//error_log("return algo");
+
+
+			if (!$query->execute($datos)) {
+				var_dump($query->errorInfo());
+				die;
+			} 
+			else {
+				return true;
+				error_log("return true");
+	 
+			}
+		}		
+
+
+
+		/*  MODIFICACION DE LA FICHA DEL INSCRITO DESDE EL BACK */
+		public static function updatefichaescuelaPascua($idinscripcion,
+            $dnijugador,
+            $nombre,    $apellidos, $date,  $club,  $direccion, 
+            $numero, $piso,         $puerta,        $poblacion, $cp, $prov, 
+            $nombretutor, $apeltutor, $dnitutor, $tlftutor, $email,  
+                $observ,  
+             $sip, $sintomascovid, $familiarcovid, $resguardo, $opcion, $importe, $turno1 , $turno2 , $turno3 , $turno4, $genero, $tipopago)
+		{
+			//error_log("id_inscrip en update escuela fallas= ".$idinscripcion);
+            
+			$sql = "UPDATE  registros_escuela_pascua 
+                    SET     dni=:dnij, 
+                            nombre=:nombre,         apellidos=:apel,            fechanacimiento=:fechan,    club=:club,      direccion=:direc,   
+                            numero=:num,            piso=:piso,                 puerta=:puerta,             poblacion=:pob, cp=:cp,                 provincia=:prov, 
+                            nombretutor=:nomtut,    apellidostutor=:apeltut,    dnitutor=:dnitut,           telefonotutor=:telef, 					emailtutor=:email, 
+                              
+                             observaciones=:observ, 
+                             sintomascovid=:sint, familiarcovid=:famili, 
+                            
+                             fotocopiasip=:sip ,  resguardopago=:resg,  opcion=:opc, turno1=:t1, turno2=:t2, turno3=:t3, turno4=:t4,  importe=:precio, genero=:gen, tipo_pago=:pago  
+                    WHERE 
+                            id=:idinscrip";
+			$query = db_utf8::singleton()->prepare($sql);
+
+			if (!$query) {
+				return false;
+			}
+
+			$datos = array(':idinscrip' => $idinscripcion, ':dnij' => $dnijugador, ':nombre' => $nombre, ':apel' => $apellidos, ':fechan' => $date, ':club' => $club,  ':direc' => $direccion, ':num' => $numero, ':piso' => $piso, ':puerta' => $puerta, ':pob' => $poblacion, ':cp' => $cp, ':prov' => $prov, ':nomtut' => $nombretutor, ':apeltut' => $apeltutor, ':dnitut' => $dnitutor, ':telef' => $tlftutor, ':email' => $email,  ':observ' =>$observ,  ':sip' =>$sip, ':sint' =>$sintomascovid, ':famili' =>$familiarcovid,  ':resg' =>$resguardo, ':opc'=>$opcion, ':t1'=>$turno1, ':t2'=>$turno2, ':t3'=>$turno3, ':t4'=>$turno4, ':precio' =>$importe, ':gen' =>$genero, ':pago' =>$tipopago);
+
+			//error_log(print_r($datos,1));
+			//die;
+
+			if (!$query->execute($datos)) {
+				error_log(print_r($query,1));
+				return false;
+			}
+			else {
+				error_log("id_inscrip ok en update escuela pascua= ".$idinscripcion);
+				return true;
+			}
+		}
+
+
+		// Envío de mail al cliente
+		public static function mailssend($numeropedido, $contenido, $seccioninscripcion, $email) {
+			// Cargamos la clase PHPMailer
+			require_once("PHPMailer/class.phpmailer.php");
+			require_once("PHPMailer/class.smtp.php");
+            require_once("config.php");		//	Contiene constantes del envio del email
+
+			// Instanciamos un objeto PHPMailer
+			$mail = new PHPMailer();
+
+			$mail->CharSet = "UTF-8";
+
+			// Le decimos que usamos el protocolo SMTP
+			$mail->IsSMTP();
+
+			// Le decimos que es necesario autenticarse
+			$mail->SMTPAuth = true;
+
+            // Indicamos aquí el nombre del servidor de correo
+            $mail->Host = __phpmailer_host__;           //  "in-v3.mailjet.com";	//$mail->Host = "in-v3.mailjet.com";
+
+            // Asignamos el puerto SMTP que usa nuestro servidor
+            $mail->Port = __phpmailer_port__;
+            $mail->SMTPSecure = "tls";   
+
+            // Indicamos aquí nuestro nombre de usuario
+            $mail->Username = __phpmailer_username__;	//  $mail->Username = "1c96c2909ac708240c4491b5a821fa21";
+
+            // Indicamos la contraseña
+            $mail->Password = __phpmailer_password__;   //  $mail->Password ="187201d6b77557358403ccbc07cee13a";
+
+			// Añadimos la dirección del remitente
+			$mail->From = "alqueria@alqueriadelbasket.info";
+
+			// Añadimos el nombre del emisor
+			$mail->FromName = "L´Alqueria del Basket";
+
+			// En la dirección de responder ponemos la misma del From
+			$mail->AddReplyTo("recepcion@alqueriadelbasket.com","L´Alqueria del Basket");
+			$mail->AddReplyTo("campus@alqueriadelbasket.com","L´Alqueria del Basket");
+
+			// Le indicamos que nuestro Email está en Html
+			$mail->IsHTML(true);
+
+			// Indicamos la dirección y el nombre del destinatario
+			$mail->AddAddress($email, 'Inscripción en 5º Escuela Pascua 2021');
+
+			// Con copia oculta
+			$mail->AddBCC('campus@valenciabasket.com', 'Inscripción en 5º Escuela Pascua 2021');
+			$mail->AddBCC('recepcion@alqueriadelbasket.com', 'Inscripción en 5º Escuela Pascua 2021');
+
+			// Ponemos aquí el asunto
+			$mail->Subject = $seccioninscripcion;
+
+			// Creamos todo el cuerpo del Email en Html en la variable $body
+			$body = '
+				<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+				<html xmlns="https://www.w3.org/1999/xhtml">
+					<head>
+						<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+						<title>L´Alqueria del Basket</title>
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					</head>
+					<body style="margin: 0; padding: 0;">
+						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td style="padding: 20px 0 30px 0;">
+									<!--[if (gte mso 9)|(IE)]>
+									<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td>
+									<![endif]-->
+
+									<table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+										<tr>
+											<td align="center" bgcolor="#000000" style="padding: 15px 0 15px 0;">
+												<a href="https://servicios.alqueriadelbasket.com" target="_blank">
+													<img src="https://servicios.alqueriadelbasket.com/img/logos-cabecera-email.png" alt="Alqueria del Basket" width="547" height="81" style="display: block;">
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td bgcolor="#ffffff" style="padding: 30px 25px 30px 25px;">
+												<h3 style="color: #eb7c00; border-bottom: #eb7c00 2px solid;">'.$seccioninscripcion.'</h3>
+												<p><strong>Estos son los datos recibidos relacionados con su inscripción.</strong></p>
+												<p><strong>Número de pedido:</strong> '.$numeropedido.'</p>
+												<p>'.$contenido.'</p>
+												<p><strong>En caso de cualquier duda o problema con la inscripción, remitan un correo a recepcion@alqueriadelbasket.com</strong></p>
+											</td>
+										</tr>
+										<tr>
+											<td bgcolor="#424241" style="padding: 20px 30px 20px 30px">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+													<tr>
+														<td width="75%" style="font-family: Arial, sans-serif; line-height: 18px; font-size: 12px;">
+															<span style="color: #eb7c00;">&copy; L´Alqueria del Basket 2020</span><br>
+															<span style="color: #ffffff;">C/ Bomber Ramon Duart S/N 46013, València</span><br>
+															<span style="color: #ffffff;">+34 96 121 55 43</span>
+														</td>
+														<td width="25%" align="right">
+															<table border="0" cellpadding="0" cellspacing="0">
+																<tr>
+																	<td>
+																		<a href="https://www.facebook.com/LAlqueriaVBC" target="_blank">
+																			<img src="https://servicios.alqueriadelbasket.com/img/logo-facebook.png" alt="Facebook L´Alqueria del VBC" width="32" height="32" style="display: block;" border="0">
+																		</a>
+																	</td>
+																	<td style="font-size: 0; line-height: 0;" width="10%">&nbsp;</td>
+																	<td>
+																		<a href="https://twitter.com/LAlqueriaVBC" target="_blank">
+																			<img src="https://servicios.alqueriadelbasket.com/img/logo-twitter.png" alt="Twitter L´Alqueria del VBC" width="32" height="32" style="display: block;" border="0">
+																		</a>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<!--[if (gte mso 9)|(IE)]>
+											</td>
+										</tr>
+									</table>
+									<![endif]-->
+								</td>
+							</tr>
+						</table>
+					</body>
+				</html>';
+
+			// Añadimos aquí el cuerpo del Email
+			$mail->MsgHTML($body);
+
+			// Enviamos y comprobamos si se ha mandado el Email correctamente
+			if (!$mail->Send()) {
+				//$mensaje_a_mostrar = "Mailer Error: " . $mail->ErrorInfo . "<br>";
+				return false;
+			}
+			else {
+				//$mensaje_a_mostrar = "Tu mensaje ha sido enviado.<br>";
+				return true;
+			}
+		}
+	}
+?>

@@ -1,0 +1,9 @@
+ Hilo de ejecución del TPV
+
+- Formulario
+
+- Action a controlador. En el controlador recogemos los datos y guardamos en base de datos, si hace bien el insert redireccionamos a reservas.php dentro de la carpeta tpv con el número de pedido, el titular y el importe.
+
+- En reservas.php inicializamos las variables url, urlok y urlko y cargamos un formulario con campos hidden y el action a redsys.
+
+- Volverá por reservas-respuesta-tpv dónde controlamos el código de respuesta y en caso de ser positivo. Enviamos el correo y actualizamos la base de datos.

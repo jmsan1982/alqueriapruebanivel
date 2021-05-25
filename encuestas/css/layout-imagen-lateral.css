@@ -1,0 +1,67 @@
+.titular{
+	width: 125%;
+}
+.firma{
+	text-align: right;
+	font-weight: bold;
+	margin-top: -20px;
+	width: 115%;
+}
+.contenido{
+	width: 115%;
+	text-align: justify;
+}
+
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-0,
+.py-0 {
+  padding-top: 0 !important;
+}
+
+.pr-0,
+.px-0 {
+  padding-right: 0 !important;
+}
+
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
+
+.pl-0,
+.px-0 {
+  padding-left: 0 !important;
+}
+
+@media only screen and (max-height: 800px) {
+    #page-content {
+        margin-top: 15vh;
+        min-height: 76vh;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1155px) {
+	.contenido{
+		width: 110%;
+	}
+	#page-content{
+		margin-bottom: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+    .firma{
+		width: 100%;
+	}
+	.titular{
+		width: 100%;
+	}
+	.contenido{
+		width: 100%;
+	}
+}

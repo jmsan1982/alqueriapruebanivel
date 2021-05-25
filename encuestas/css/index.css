@@ -1,0 +1,315 @@
+/* 
+CAROUSEL PRINCIPAL 
+*/
+.carousel-wrap-news .owl-nav{
+    display: none !important;	
+}
+
+.owl-carousel.owl-drag .owl-item {
+    padding: 0px !important;    /* Importante porque es el slider principal de la web*/
+}
+
+/*#mainCarouselWrapper .img-holder1{
+    background-size: 125%;
+    background-position: 0px -24px;
+    background-repeat: no-repeat;
+    background-color: #2a205f;
+    overflow: hidden;
+}*/
+
+#mainCarouselWrapper .col-8 {
+    display:none;
+}
+
+#mainCarouselWrapper .contact-info-wrap {
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    background-image: none;
+    background-color: #fff;
+    width: 91%;
+}
+
+#mainCarouselWrapper .contact-info-wrap p.d-inline {  
+    margin-bottom: 0 !important;    
+}  
+
+
+
+/*  
+    INDEX. DESTACADOS 
+*/
+#destacados-container{
+    width: 100% !important;
+    position:absolute;
+    margin-top:-75px;
+    z-index:9;
+    text-align: center;
+    width: 33%;
+}
+
+.destacados-box{
+    background-color: #252525;
+    background-size: 100%;
+    height:65px;
+    border-bottom:3px solid #EB7C00;
+    opacity:0.75;
+    color:white;
+    font-size: 1.2em;
+}
+
+.destacados-box p{
+    margin-top: 0px;
+    color:white;
+}
+
+.destacados-box a h4{
+    font-weight: bold;
+    color: #EB7C00;
+    margin-top: 5px;
+}
+
+
+/* 
+    Noticias 
+*/
+.car-text-wrap a:hover{
+    border-bottom:3px solid #EB7C00;
+    font-size: 1.5rem;
+}
+
+/* 
+    VIDEO y CAPA DE ENCIMA 
+*/
+.video-container{
+    max-height: 400px;overflow:hidden;z-index: 1;
+}
+
+#video-bg{
+    position:relative;width:auto;min-width:100%;overflow-x:hidden;
+    height: auto;
+}
+
+.videoindex{
+    height:400px;
+    position: relative;
+    overflow:hidden;
+    margin-top: -400px;
+}
+
+/* Video Overlay */
+#overlay {
+    width:100%;
+    height:500px;
+    position:relative;
+    top:45%;
+    left:0;
+    transition:background-color 300ms ease;
+}
+
+#overlay .btn.btn-link-index {
+    width: auto;
+    max-width: 395px;
+    background-color: white;
+    opacity:0.85;
+    color: black;
+    font-size:1.5rem;
+}
+
+#overlay .btn.btn-link-index:hover {
+    background-color: white;
+    opacity:1;
+    color: #444;
+    font-size:1.6rem;
+}
+
+#overlay .car-btn-wrap a {
+    text-align:center;line-height:40px;
+}              
+
+
+
+#tabla-actividades-index{
+    margin:0 auto;
+}
+
+
+
+tr.p-gray,tr.p-gray-2,
+tr.p-liso,tr.p-liso-2{
+    margin-bottom: 5px;
+}
+
+.p-liso-2 > th{
+    padding: 14px 8px 14px 17px;
+    background-color: rgba(37, 37, 37, 0.45);
+}
+    
+.p-gray-2 > th{
+    padding: 14px 8px 14px 17px;
+    background-color: rgba(37, 37, 37, 0.45);
+}
+
+.p-gray-2 th a,
+.p-liso-2 th a{
+    text-transform: uppercase;
+    font-size:1.5em;
+    line-height:1.5em;
+    color:white;
+}
+
+
+
+#table-wrap-actividades-container{
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin-top: 2.5%;margin-left: 2.5%;margin-bottom: 2.5%;
+    background-image: url(../img/alqueria-fondo-eventos-2.JPG);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    padding-bottom: 15px;
+    border:1px solid #ccc;
+    min-height:250px;
+}
+
+button.ver-todas-actividades{
+    background-color:#eb7c00;
+    color:white;
+    border:none;
+    padding:15px;
+    font-size:1.3em;
+}
+
+
+/*      
+    CAJA TU COLE    
+*/
+#tu-cole-wrap-container{
+    background-image: url(../img/tucole/tucole2.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    padding-bottom: 15px;
+    border:1px solid #ccc;
+    flex: 0 0 45%;padding-left:0px; padding-right: 0px;                                 
+    max-width: 45%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    min-height:250px;
+}
+
+#tu-cole-wrap-container .btn{
+    font-family: "RobotoCondensedRegular",sans-serif;
+    font-size: 1.5em;
+}
+
+#tu-cole-wrap-container .btn.btn-link-index:hover{
+    background-color: white;
+    opacity:1;
+    color: #444;
+    font-size:1.6em;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width:575px) {
+
+
+    #mainCarouselWrapper .contact-info-wrap p {
+        margin-bottom: 13px !important;
+    }
+
+    #mainCarouselWrapper .contact-info-wrap .boxed-form .form-group input.form-control {
+        max-height: 40px;
+    }
+
+    #mainCarouselWrapper .contact-info-wrap #iniciar-encuesta {
+        margin-bottom: 5px;
+    }
+
+    #mainCarouselWrapper .contact-info-wrap #iniciar-encuesta button {
+        margin: 0 auto;
+        height: 45px;
+    }    
+
+}
+
+@media only screen and (max-width:767px) {
+    #overlay { height:auto; }
+    #tabla-actividades-index{
+        width:90%;
+    }
+}
+
+/* Visibility Helpers */
+@media only screen and (min-width:768px) {
+    .visible-mobile,.visible-tablet,.hidden-desktop
+    {   display:none !important;}
+    
+    #tabla-actividades-index{
+        width:auto;
+        min-width: 500px;
+    }
+
+    /*#mainCarouselWrapper .img-holder1{
+        background-size: 125%;
+        background-position: 0px -24px;
+        background-repeat: no-repeat;
+        background-color: #2a205f;
+        overflow: hidden;
+    }*/
+
+    #mainCarouselWrapper .contact-info-wrap {
+        top: 43%;
+        width: 96%;
+    }    
+
+    #mainCarouselWrapper .col-8 {
+        display: none;
+    }    
+}
+
+@media only screen and (min-width:992px) {
+    /*#mainCarouselWrapper .img-holder1{
+        background-size: cover;
+        background-position: center top;
+    }*/
+
+    #mainCarouselWrapper .contact-info-wrap {
+        top: 15%;
+        width: 91%;
+    }        
+
+    #mainCarouselWrapper .col-8 {
+        display: block;
+    }   
+
+}
+
+
+
+@media only screen and (min-width:480px) and (max-width:768px){
+    .visible-mobile,.hidden-tablet,.visible-desktop { display:none !important; }
+}
+
+@media only screen and (max-width:479px){
+    .hidden-mobile,.visible-tablet,.visible-desktop { display:none !important; }
+    .videoindex{ height: 50px;}
+}
+
+@media only screen and (max-width:400px){
+    .facebook-if{
+        margin-left: 0%;
+    }
+    
+    .colface{
+        /* padding-left: 0px !important;
+        padding-right: 0px !important;*/
+    }
+    
+    .colbuzon h3{
+        font-size: 26px;
+    }
+}

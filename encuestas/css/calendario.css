@@ -1,0 +1,40 @@
+.Pages .schedule-block img {
+	margin: 0 auto;
+}
+
+.Pages .schedule-block .table-wrap table {
+    width: 100%;
+}
+
+.Pages#alquiler .schedule-block table tr th:first-child {
+    width: 40%;
+}
+
+.texto_responsive:before{
+	content: attr(data-minitext);
+}
+
+@media only screen and (min-width:1200px) {
+    .texto_responsive:before {
+  		content: attr(data-text);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	.Pages .schedule-block .table-wrap {
+		margin: 0;
+	}
+
+	.Pages .schedule-block .table-wrap table {
+	    width: 100%;
+	}
+
+	.Pages .schedule-block table tr th:first-child {
+	    padding-left: 15px !important;
+	    width: 25%;
+	}
+
+	.Pages#alquiler .schedule-block table tr th:first-child {
+	    width: 30%;
+	}
+}

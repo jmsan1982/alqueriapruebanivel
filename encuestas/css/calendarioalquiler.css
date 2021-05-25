@@ -1,0 +1,398 @@
+/*.parallax { 
+    height: 400px; 
+    margin-top: 10px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax p{
+	margin: 50px;
+	color:black;
+	background-color: rgba(247, 247, 247, 0.6);
+	font-family: "RobotoCondensedRegular", sans-serif;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.parallax h4{
+	padding: 50px;
+	color:black;
+	background-color: rgba(247, 247, 247, 0.6);
+	text-transform: uppercase;
+	font-family: "RobotoCondensedRegular", sans-serif;
+	width: 50%;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	.parallax h4{
+            padding: 10px;
+            width: 100%;
+	}
+	.parallax p {
+    	margin-top: 75px;
+    	font-size: 1em;
+  	}
+}*/
+
+.table-1{
+    padding-top:12px;margin-top: 10px;
+}
+
+.img-layout{height:300px;margin-top:0px;}
+
+/* DEFAULTING ELEMENTS CALENDAR*/
+.calendar-box ul, .calendar-box ol, .calendar-box li {list-style:none;}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ddd;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
+
+/* HIDDEN, NONE, MOBILE */
+.calendar-box .indented {display:block; left:-999em; line-height:0; position:absolute; text-indent:-999em; top:-999em;}
+/*.calendar-box .hidden, .mobile {display:none;}*/
+
+/* TABLA */
+
+.calendar-box {position:relative; padding:.4em .4em 2.8em .4em; width:100%;}
+
+.calendar-box .calendar-title {font-size:1.6em; padding:.375em 0 .625em 0; text-align:center;padding-top:12px;margin-top: 10px;}
+.calendar-box .calendar-nav li {position:absolute;}
+.calendar-box .calendar-nav-months li {top:.4em;}
+.calendar-box .calendar-nav-months li.calendar-nav-previous {left:2em;}
+.calendar-box .calendar-nav-months li.calendar-nav-next {right:2em;}
+.calendar-box .calendar-nav-months li a,
+.calendar-box .calendar-nav-months li a img {display:block; height:2.5em; width:2.5em;margin-top:20px;}
+.calendar-box .calendar-nav-years li {bottom:.4em;}
+.calendar-box .calendar-nav-years li.calendar-nav-previous {left:.4em;}
+.calendar-box .calendar-nav-years li.calendar-nav-next {right:.4em;}
+.calendar-box .calendar-nav-years li a {color:#3566A5; font-size:1.4em;}
+.calendar-box .calendar-nav-years li a:hover,
+.calendar-box .calendar-nav-years li a:hover span {text-decoration:none;}
+
+.calendar-box table {border:1px solid #c4c4c4; border-bottom:0; border-right:0; width:100%;font-size: 15px;}
+
+.calendar-box table th,
+.calendar-box table td {border:1px solid #c4c4c4; border-top:0; border-left:0; text-align:center;}
+
+.calendar-box table td a,
+.calendar-box table td span,
+.calendar-box table td strong {display:block;}
+.calendar-box table thead th {background-color:lightgray;}
+.calendar-box table thead th,
+.calendar-box table td a,
+.calendar-box table td span {font-size:1.2em; padding:.5em 0;}
+.calendar-box table td span {color:#c4c4c4;}
+.calendar-box table td.day-today strong {border:1px solid #333;}
+.calendar-box table td.day-today strong a,
+.calendar-box table td.day-today strong span {padding:.4166em 0;}
+.calendar-box table td a {color:#3566A5; text-decoration:none;}
+.calendar-box table td a:hover {background-color:#eb7c00; color:#fff;}
+.calendar-box table td.day-selected a {background-color:#333; color:#fff;}
+.calendar-title-box{margin-bottom: -10px;}
+.calendar-box table p{
+	margin-bottom: 0rem !important;
+}
+/* CHECKBOXES */
+.containerchekbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containerchekbox h4{
+	text-align: left;
+}
+
+/* Hide the browser's default checkbox */
+.containerchekbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+/*  border: #eb7c00 2px solid;*/
+  border: #eb7c00 2px solid;
+  background-color: #aeaea5;
+  -webkit-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;transition:all .4s ease-in-out;
+}
+.luz{
+/*  background-image: url("../img/luz.jpg");*/
+  background-repeat: no-repeat;
+  background-size:  40px 40px;
+}
+.marcador{
+/*  background-image: url("../img/marcador.jpg");*/
+  background-repeat: no-repeat;
+  background-size:  30px 30px;
+}
+.balones{
+/*  background-image: url("../img/balon.jpg");*/
+  background-repeat: no-repeat;
+  background-size:  30px 30px;
+}
+.conos{
+/*  background-image: url("../img/cono.jpg");*/
+  background-repeat: no-repeat;
+  background-size:  30px 30px;
+}
+.aros{
+/*  background-image: url("../img/aros.jpg");*/
+  background-repeat: no-repeat;
+  background-size:  28px 28px;
+}
+.maquina{
+/*  background-image: url("../img/canasta.jpg");*/
+  background-repeat: no-repeat;
+  background-size:  28px 28px;
+}
+/* On mouse-over, add a grey background color */
+.containerchekbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerchekbox input:checked ~ .checkmark {
+  background-image: none;
+  background-color:#eb7c00;
+  border:#aeaea5 2px solid;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-control::placeholder{
+    color: #555 !important;
+}   
+
+/* Show the checkmark when checked */
+.containerchekbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerchekbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.sectionformrent{
+	min-height: 50vh !important;
+	margin-top: 1.5% !important;
+}
+select{
+	height: 60px !important;
+}
+
+/* Radio Buttons */
+.control-group {
+  text-align: left;
+  margin-top: 20px;
+}
+.control {
+  position: relative;
+  padding-left: 30px;
+  margin-left: 0%;
+  display:block;
+  cursor: pointer;
+}
+
+.btn-alquiler{
+    width:100% !important;
+    margin: 0 auto !important;
+    font-size:1em;
+}
+ 
+@media (max-width: 991px) {
+    .control {
+            display: block;
+            margin-left: 0%;
+    }
+}
+
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: #eb7c00 3px solid;
+  background: #aeaea5;
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: #ccc;
+}
+
+.control input:checked ~ .control__indicator {
+  background: #eb7c00;
+  border: #eb7c00 0px solid;
+}
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: #eb7c00;
+}
+
+.control input:disabled ~ .control__indicator {
+  background: #eb7c00;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+.control--radio .control__indicator:after {
+  left: 5px;
+  top: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  /* circulo blanco */
+  background: #fff;
+}
+
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #eb7c00;
+}
+
+.tab-pane p{
+	color:white;
+	padding: 10px;
+}
+
+.anyadirreserva{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 2px;
+    margin-top: -10px;
+    margin-left: 100px;
+}
+.horaslibres{
+	text-align: center;
+  color:white;
+  padding-top: 10px;
+}
+.horalibre{
+	text-align: right;
+  color:white;
+}
+
+
+@media only screen and (max-width: 557px) {
+    .anyadirreserva{
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 462px) {
+  .anyadirreserva{
+      margin-top: 5px;
+      width: 215px;
+  }
+}
+.contenidoservicio{
+    text-align:justify;
+}
+@media only screen and (max-width: 575px) {
+    .contenidoservicio{
+        padding: 10px;
+    }
+    /*.row{
+            width: 100% !important;
+            padding-left: 30px;
+    }*/
+}
+
+.cargadehoras{
+    background-color:#525252;
+}
+
+#calendario{
+    background-image: url(../img/about/bg-img-logo.png);
+    background-repeat: no-repeat;
+    background-position-x: center; 
+    background-position-y: 75%;
+}
+
+button a span{
+    color:black;
+}
+
+button a span:hover{
+    color:white;
+}
+
+input{
+    border: #eb7c00 2px solid !important;
+}
+.alternativas{
+  padding-bottom: 80px;
+}
+.alternativas p{
+  text-align:center;
+  padding-bottom: 5px;
+}
+.alternativas :hover{
+  transition: background-color 0.5s ease;
+  background-color: #eb7c00;
+}

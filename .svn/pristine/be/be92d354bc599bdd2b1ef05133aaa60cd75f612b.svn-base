@@ -1,0 +1,98 @@
+#formus #escudo {
+    margin-top: 1em !important;
+    text-align: center;
+}
+
+#formus #titulo {
+    margin-top: 0em !important;
+    text-align: center;
+}
+
+#formus #titulo h2 {
+	margin-top: 0em !important;
+	margin-bottom: 0em !important;
+    font-size: 1.8em;
+}
+
+#formus #titulo h3 {
+	margin-top: 0em !important;
+    font-size: 1.5em;
+}
+
+#formus #tabla {
+    margin-top: 2em !important;
+    margin-bottom: 1em !important;
+}
+
+#formus #tabla .contact-info-wrap {
+    background-image: none;
+    background-color: #fff;
+}
+
+#formus #tabla .contact-info-wrap h4 {
+	margin-top: 0em !important;
+	margin-bottom: 0em !important;
+	text-align: center;
+}
+
+#formus #tabla .contact-info-wrap p {
+    font-size: 1.1em;
+}
+
+#formus .boxed-form .form-group .form-control {
+	font-size: 1.2em;
+}
+
+
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Tablet vertical + */
+@media (min-width: 768px) {
+	#formus #escudo {
+	    margin-top: 2em !important;
+	}
+
+	#formus #titulo {
+	    margin-top: 3em !important;
+        text-align: left;
+	}
+
+	#formus #titulo h2 {
+	    font-size: 2em;
+	}
+
+	#formus #titulo h3 {
+	    font-size: 1.7em;
+	}
+
+	#formus #tabla {
+	    margin-top: 2em !important;
+	    margin-bottom: 0em !important;
+	}
+
+	#formus #tabla .contact-info-wrap p {
+	    font-size: 1.25em;
+	}
+
+	#formus .boxed-form .form-group .form-control {
+		font-size: 1.25em;
+	}	
+}
+
+/* Portátil +  */
+@media (min-width: 1200px) { 
+	#formus #escudo {
+	    margin-top: 2em !important;
+	}
+
+	#formus #titulo {
+	    margin-top: 5em !important;
+        text-align: left;
+	}
+
+	#formus #tabla {
+	    margin-top: 4em !important;
+	}
+}

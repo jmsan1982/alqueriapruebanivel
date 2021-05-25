@@ -1,0 +1,89 @@
+
+.textblock{
+	color: black;
+	background-color: rgba(255,255,255,.70);
+    width: 100%;
+    text-align: justify;
+}
+.backgr{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.mySlides{
+	width: 100%;
+}
+#slideshow {
+  position: relative;
+}
+
+#slideshow > div {
+  position: absolute;
+}
+.icon-wrap p {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.contenido{
+	margin-top: -20px;
+}
+.text{
+	margin-top: -10px;
+}
+.titulo{
+	color: #eb7c00;
+}
+
+.owl-carousel.owl-drag .owl-item{
+    padding:0px 15px;
+}
+
+
+
+/*
+    NUEVO ESTILO DE FORMULARIO
+    POR EL MOMENTO, APLICAR 2-B. Esto está en cafeteria y tu cole, jornada puertas abiertas
+*/
+.fc-1{
+    border:1px solid #aaa !important;
+}
+
+.fc-1::placeholder{
+    color: #555 !important;
+}
+
+.fc-2{
+    border:1px solid #eb7c00 !important;
+}
+
+.fc-2::placeholder{
+    color: #eb7c00 !important;
+}
+
+.fc-2-b{
+    border-bottom:3px solid #eb7c00 !important;
+    border-left:none !important;
+    border-right:none !important;
+    border-top:none !important;
+    background-color:#f0f0f0;
+}
+
+.fc-2-b::placeholder{
+    color: #555 !important;
+}
+
+.fc-3{
+    border:2px solid #eb7c00 !important;
+}
+
+.fc-3::placeholder{
+    color: #555 !important;
+}
+
+.fc-4{
+    border:2px solid #eb7c00 !important;
+    background-color:#f0f0f0;
+}
+
+.fc-4::placeholder{
+    color: #555 !important;
+}
+

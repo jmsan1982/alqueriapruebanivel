@@ -1,0 +1,20 @@
+.alqueria-bg-box{
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.95)), url('../img/banner-lateral-alqueria.JPG');
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-size: 100% auto;
+    border-radius: 5px;
+    min-height: 65vh;
+}
+
+.gallery-pdf-item{
+    padding:10px;
+}
+
+.gallery-pdf-item p{
+    min-height:44px;
+    color:#242424;
+    font-weight:bold;
+}

@@ -1,0 +1,11 @@
+.flip{
+	display: none;
+	color:white;
+	transform: rotateY(-180deg);
+	margin-bottom: -3px;
+}
+.capaslide{
+	width: 100%;
+	position: relative;
+	margin-left: -100%;
+}

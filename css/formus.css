@@ -1,0 +1,258 @@
+#formus #escudo {
+	margin-top: 1em !important;
+	text-align: center;
+}
+
+#formus #titulo {
+	margin-top: 0em !important;
+	text-align: center;
+}
+
+#formus #titulo h2 {
+	margin-top: 0em !important;
+	margin-bottom: 0em !important;
+	font-size: 1.8em;
+}
+
+#formus #titulo h3 {
+	margin-top: 0em !important;
+	font-size: 1.5em;
+}
+
+#formus #tabla {
+	margin-top: 2em !important;
+	margin-bottom: 1em !important;
+}
+
+#formus #tabla .contact-info-wrap {
+	background-image: none;
+	background-color: #fff;
+}
+
+#formus #tabla .contact-info-wrap h4 {
+	margin-top: 0em !important;
+	margin-bottom: 0em !important;
+	text-align: center;
+}
+
+#formus #tabla .contact-info-wrap p {
+	font-size: 1.1em;
+}
+
+#formus .boxed-form .form-group .form-control {
+	font-size: 1.2em;
+}
+
+
+/* Tabla transacciones exteriores */
+
+#formus table.transacciones-exteriores {
+	width: 100%;
+	max-width: 600px;
+	font-size: small;
+}
+
+#formus table.transacciones-exteriores tr td {
+	padding-bottom: 7px;
+}
+
+#formus table.transacciones-exteriores tr td:first-child {
+	width: 30%;
+}
+
+#formus table.transacciones-exteriores tr td:last-child {
+	width: 70%;
+}
+
+#formus p.transacciones-exteriores {
+	margin-top: 5px;
+}
+
+
+/*************
+* SPORTSCLUB *
+*************/
+
+.franja1-container,
+.franja2-container,
+.franja3-container,
+.franja4-container,
+.franja5-container {
+	margin-left: 2em;
+}
+
+
+/****************
+* ROPA A MEDIDA *
+****************/
+
+#ropa p,
+#ropa ul.ropa-medida li {
+    font-size: 16px;
+}
+
+.titulo-prenda {
+	font-weight: bold;
+	font-size: 26px;
+	color: #5a6670;
+	text-decoration: underline;
+    -webkit-text-decoration-color: #ff6b0d;
+    text-decoration-color: #ff6b0d;
+    text-transform: uppercase;
+}
+
+.subtitulo-prenda {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #ff6b0d;
+}
+
+.resultados-reducido {
+	display: block;
+	font-size: 16px;
+}
+
+.resultados-reducido table {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.resultados-reducido table thead tr {
+    color: #fff;
+    background-color: #ff6b0d;
+}
+
+.resultados-reducido table tr th:first-child,
+.resultados-reducido table tr td:first-child {
+	padding-left: 5px !important;
+	font-weight: bold;
+}
+
+.resultados-completo {
+	display: none;
+}
+
+.equipos-alqueria-resultados-tabla {
+	width: 100%;
+}
+
+
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Moviles anchos/panorámico */
+@media (min-width: 415px) {
+	/* Ropa a medida */
+	.resultados-reducido {
+		display: none;
+	}
+
+	.resultados-completo {
+		display: block;
+	}
+
+	.resultados-completo {
+		font-size: 16px;
+	}
+
+	.resultados-completo table thead tr {
+		color: #fff;
+		background-color: #ff6b0d;
+	}
+
+	.resultados-completo table tr th:first-child,
+	.resultados-completo table tr td:first-child {
+		padding-left: 5px !important;
+		width: 30%;
+	}
+
+	.resultados-completo table tr th:nth-child(2),
+	.resultados-completo table tr th:nth-child(3),
+	.resultados-completo table tr th:nth-child(4),
+	.resultados-completo table tr th:nth-child(5),
+	.resultados-completo table tr th:nth-child(6),
+	.resultados-completo table tr th:nth-child(7),
+	.resultados-completo table tr th:nth-child(8),
+	.resultados-completo table tr th:nth-child(9),
+	.resultados-completo table tr th:nth-child(10),
+	.resultados-completo table tr th:nth-child(11) {
+		width: 7%;
+	}
+
+	.resultados-completo table tr:hover>td {
+		background-color: #fbe5cb;
+	}
+}
+
+
+/* Tablet vertical + */
+@media (min-width: 768px) {
+	#formus #escudo {
+		margin-top: 2em !important;
+	}
+
+	#formus #titulo {
+		margin-top: 3em !important;
+		text-align: left;
+	}
+
+	#formus #titulo h2 {
+		font-size: 2em;
+	}
+
+	#formus #titulo h3 {
+		font-size: 1.7em;
+	}
+
+	#formus #tabla {
+		margin-top: 2em !important;
+		margin-bottom: 0em !important;
+	}
+
+	#formus #tabla .contact-info-wrap p {
+		font-size: 1.25em;
+	}
+
+	#formus .boxed-form .form-group .form-control {
+		font-size: 1.25em;
+	}
+
+
+	/* Tabla transacciones exteriores */
+	#formus table.transacciones-exteriores {
+		font-size: 16px;
+	}
+
+
+	/* Ropa a medida */
+	.titulo-prenda {
+		font-size: 28px;
+	}
+
+	.subtitulo-prenda {
+		font-size: 22px;
+	}
+
+	.resultados-completo {
+		font-size: 17px;
+	}
+}
+
+
+/* Portátil +  */
+@media (min-width: 1200px) { 
+	#formus #escudo {
+		margin-top: 2em !important;
+	}
+
+	#formus #titulo {
+		margin-top: 5em !important;
+		text-align: left;
+	}
+
+	#formus #tabla {
+		margin-top: 4em !important;
+	}
+}

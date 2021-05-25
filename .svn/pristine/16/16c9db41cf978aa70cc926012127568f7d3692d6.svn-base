@@ -1,0 +1,170 @@
+.Pages .schedule-block img {
+	margin: 0 auto;
+}
+
+.Pages .schedule-block .table-wrap table {
+	width: 100%;
+}
+
+.Pages#alquiler .schedule-block table tr th:first-child {
+	width: 40%;
+}
+
+.texto_responsive:before{
+	content: attr(data-minitext);
+}
+
+
+/* CALENDARIO GRANDE (ACTIVIDADES > CALENDARIO) */
+
+#calendario-grande div,
+#calendario-grande span,
+#calendario-grande table,
+#calendario-grande tbody,
+#calendario-grande tfoot,
+#calendario-grande thead,
+#calendario-grande tr,
+#calendario-grande th,
+#calendario-grande td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+#calendario-grande>table {
+	border-collapse: collapse;
+	clear: both;
+	font-size: 12px;
+	margin: 20px 0 .6em;
+	table-layout: fixed;
+	width: 100%;
+}
+
+/* Título mes con las flechas */
+#calendario-grande .cabecera {
+	width: 100%;
+}
+
+#calendario-grande>table>tbody tr:first-child td {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	height: 10px;
+	letter-spacing: 1px;
+	padding: 4px 0;
+	text-align: center;
+	border: 0;
+}
+#calendario-grande>table>tbody tr:first-child td:nth-child(1),
+#calendario-grande>table>tbody tr:first-child td:nth-child(3) {
+	width: auto;
+	padding: 10px 0;
+}
+
+#calendario-grande>table>tbody tr:first-child td:nth-child(2) {
+	width: 230px;
+	padding: 4px 0;
+}
+
+#calendario-grande>table>tbody tr:first-child i {
+	font-size: 18px;
+}
+
+/* Días de la semana */
+#calendario-grande>table>tbody tr:nth-child(2) td {
+	height: auto;
+	padding: 5px 0;
+	background-color: #eb7c00;
+	color: #fff;
+	box-shadow: none !important;
+	text-align: center;
+	font-size: 16px;
+	white-space: nowrap;
+}
+
+#calendario-grande>table td {
+	border: 1px solid #959595;
+	box-sizing: border-box;
+	font-size: 12px;
+	text-align: left;
+	height: 100px;
+	padding: 0 0 .5em;
+	vertical-align: top;
+	width: 14.28%;
+}
+
+#calendario-grande>table td:hover {
+	background: #f7ca97;
+	box-shadow: #0003 0 0 10px;
+}
+
+#calendario-grande>table td .dia-evento {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.2;
+	padding: 4px 9px 6px;
+	color: #333;
+}
+
+#calendario-grande>table td .evento {
+	margin: 0 5%;
+	padding: 6px 8px;
+}
+
+#calendario-grande>table td .evento h3 {
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	overflow: hidden;
+	padding: 3%;
+	text-transform: none;
+}
+
+#calendario-grande>table td .evento:last-child {
+	border: 0;
+}
+
+@media (min-width: 768px) {
+	#calendario-grande>table td .evento {
+		border-bottom: 1px solid #959595;
+	}
+}
+
+@media (min-width: 1200px) {
+	.texto_responsive:before {
+		content: attr(data-text);
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.Pages .schedule-block .table-wrap {
+		margin: 0;
+	}
+
+	.Pages .schedule-block .table-wrap table {
+		width: 100%;
+	}
+
+	.Pages .schedule-block table tr th:first-child {
+		padding-left: 15px !important;
+		width: 25%;
+	}
+
+	.Pages#alquiler .schedule-block table tr th:first-child {
+		width: 30%;
+	}
+}
+
+@media (min-width: 1530px) {
+	.container {
+		width: 1340px;
+		max-width: 1340px;
+	}
+}
+
+@media (min-width: 1860px) {
+	.container {
+		width: 1670px;
+		max-width: 1670px;
+	}
+}

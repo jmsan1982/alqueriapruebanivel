@@ -1,0 +1,47 @@
+.titular{
+	width: 125%;
+}
+.firma{
+	text-align: right;
+	font-weight: bold;
+	margin-top: -20px;
+	width: 115%;
+}
+.contenido{
+	width: 115%;
+	text-align: justify;
+}
+
+#page-content{
+/*    margin-top:110px;*/
+/*	margin-bottom: 20px !important;*/
+}
+
+@media only screen and (max-height: 800px) {
+    #page-content {
+        margin-top: 15vh;
+        min-height: 76vh;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1155px) {
+	.contenido{
+		width: 110%;
+	}
+	#page-content{
+		margin-bottom: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+    .firma{
+		width: 100%;
+	}
+	.titular{
+		width: 100%;
+	}
+	.contenido{
+		width: 100%;
+	}
+}

@@ -1,0 +1,106 @@
+<?php
+	class entrenamientosController {
+
+		
+
+		//llamada 
+        public function actionBackEntrenamientos()
+        {
+            
+            require "models/entrenamientos.php";
+            require "models/reserva_salaestudio.php";
+            require "models/servicios.php";
+
+            if (isset($_SESSION['idcoach']) ) {  
+              
+             
+
+               //sacamos los entrenamientos
+            	$datos['equiposentrenador'] = entrenamientos::findEquiposPorCoach($_SESSION['idcoach']);
+
+            	
+            	$datos['infoEquipo'] = array();
+            	foreach ( $datos['equiposentrenador'] as $equipo ) {
+
+                  //  error_log(print_r ($equipo["nombre_equipo_cas"], true));
+
+                   $entrenmanie_aux= entrenamientos::findEntrenoPorEquipo($equipo["nombre_equipo_nueva_temporada"]);
+
+                  // error_log(print_r($entrenmanie_aux, 1));
+
+            	//	$datos['infoEquipo'] += entrenamientos::findEntrenoPorEquipo( $equipo["nombre_equipo_cas"] );
+            		array_push( $datos['infoEquipo'], $entrenmanie_aux );
+
+                   
+            		
+						  //error_log(print_r ($datos['infoEquipo'], true));
+
+            	}
+               //error_log( count($datos['infoEquipo'][0]));
+
+
+              //reservas de sala
+              $datos['reservasala'] = servicios::findReservaSalaByIdcoach($_SESSION['idcoach']);
+
+              //error_log(print_r ($datos['reservasala'], true));
+
+              //sacamos las reservas de sala de estudio
+              $datos['reservasalaestudio'] = reserva_salaestudio::findReservaSalaEstudioByIdcoach($_SESSION['idcoach']);
+           
+            	vistaSinvista(array('datos' => $datos), "layoutsback/layout_back_entrenamientos");  
+                
+            }
+
+           
+            
+        }
+
+
+
+	
+          // ANULAR RESERVA DE ASIENTO POR EL ENTRENADOR
+        public function actionAnularReservaAsientoSala()
+        {
+            require "models/reserva_salaestudio.php";
+
+            if (isset($_POST['idreserva'])) {
+                error_log("Anulacion Reseva asiento id: ".$_POST['idreserva']);
+               
+                $rutadevuelta=$_POST['rutaretorno'];
+               
+                $update =reserva_salaestudio::AnularReservaAsientoByIdPorEntrenador($_POST['idreserva'], $rutadevuelta);
+            }
+            
+            
+            
+        }
+
+
+
+         // ANULAR RESERVA DE SALA POR EL ENTRENADOR LOGUEADO
+        public function actionAnularReservaSala()
+        {
+            require "models/servicios.php";
+
+            if (isset($_POST['idreservas'])) {
+                error_log("Anulacion Reseva SALA id: ".$_POST['idreservas']);
+
+                $update =servicios::AnularReservaByIdPorEntrenador($_POST['idreservas'], $_POST['rutaretorno']);
+            }
+            
+            
+            
+        }
+
+
+
+
+
+		
+		
+
+
+
+
+	}
+?>
